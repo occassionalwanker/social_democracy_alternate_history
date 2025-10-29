@@ -16,24 +16,26 @@ if (Q.economic_growth) {
 
 = Status
 
-[+ month : month +] [+ year +]
+[+ month : month +] [+ year +] [+ fortnight : fortnight +]
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
+State policy: [? if state_ally : Ally ?][? if state_tolerance : Tolerance - ?][? if spd_tolerance <= 0 and state_ally == 0 and state_illegal == 0 : Hostile ?][? if state_illegal : Illegal ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
 
 [? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
 [? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+Faction dissent: [+ dissent_percent : dissent +]
 
 = Government
 
 President: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Prime Minister: [+ chancellor +] ([+ chancellor_party +])
+
+President of the Generalitat of Catalonia: [+ president_catalonia +]
 
 Reichstag composition:
 
