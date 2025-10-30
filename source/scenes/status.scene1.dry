@@ -37,29 +37,37 @@ Prime Minister: [+ chancellor +] ([+ chancellor_party +])
 
 President of the Generalitat of Catalonia: [+ president_catalonia +]
 
-Reichstag composition:
+Cortes composition:
 
-# 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
+# 1931: 24,44, 1933: 25, 1936: 22
+{!<span class="tooltip-text" title="Socialist Worker's Party of Spain">PSOE</span>!}: [+ psoe_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
-# 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
-# 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
-# 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
-# 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
-# 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
-# 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
-# 1928: 9, 1930: 10
+# 1931: 19,15, 1930: 15, 1932: 
+{!<span class="tooltip-text" title="Radical Republican Party">PRR</span>!}: [+ prr +]%
+# 1931: 12,98, 1930: 13
+{!<span class="tooltip-text" title="Radical Republican Socialist Party">PRRS</span>!}: [+ prrs +]%
+# 1931: 6,17, 1930: 4 (as DstP)
+{!<span class="tooltip-text" title="Republican Left of Catalonia">>ESC</span>!}: [+ esc +]%
+# 1931: 5,55, 1930: 5
+{!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ir +]%
+# 1931: 5,32, 1930: 7
+{!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr +]%
+# 1931: 3, 1930: 5
+{!<span class="tooltip-text" title="Action Popular">!}[? if not ar_name: AP?][? if ap_name != 0 : [+ ap_name +]?]{!</span>!}: [+ ceda +]%
+# 1931: 4, 1930: 18
+{!<span class="tooltip-text" title="Agrarian Party">PA</span>!}: [+ pa +]%
+# 1931: 4,25, 1930: 18
+{!<span class="tooltip-text" title="Federal Republican Galician Party">PFRG</span>!}: [+ pfrg +]%
+# 1931: 2,2, 1930: 18
+{!<span class="tooltip-text" title="Catalan League">LC</span>!}: [+ lc +]%
+# 1931: 2,9, 1930: 18
+{!<span class="tooltip-text" title="Basque parties">BP</span>!}: [+ bp +]%
+# 1931: 10, 1930: 10
 Others: [+ other_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
-Next election: [+ next_election_month : month +] [+ next_election_year +]
+Next election: [+ next_election_forthnight : next_election_month : month +] [+ next_election_year +]
 
 = Economics
 
@@ -78,7 +86,7 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Socialist Worker's Party of Spain">PSOE</span>!}: [+ psoe_relation : relationships +]
 
 {!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
 
