@@ -73,7 +73,7 @@ Next election: [+ next_election_forthnight : next_election_month : month +] [+ n
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+[? if great_deppression_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -88,33 +88,31 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Socialist Worker's Party of Spain">PSOE</span>!}: [+ psoe_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Radical Republican Party>!}[? if not prr_name: PRR?][? if prr_name != 0 : [+ prr_name +]?]{!</span>!}: [+ prr_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Radical Republican Socialist Party">PRRS</span>!}: [+ prrs_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Republican Left of Catalonia">ESC</span>!}: [+ esc_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Federal Republican Galician Party">PFRG</span>!}: [+ pfrg_relation : relationships +]
 
 = Internal Factions of the SPD
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Reformists view the union as an independent, autonomous body that shouldn't serve a political ideology, but should only strive to fight for the interests of its members, even if allied with a friendly state.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="The Revolutionaries are the militant fighters who view the CNT as weapon against the state, against capitalism and the institutions of the old world in the struggle for an anarchist world.">Revolutionary</span>!} strength: [+ revolutionary_strength : strength +], dissent: [+ revolutionary_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="The Unionists see the CNT as independent entity in the struggle for worker's rights, but view anarchist principles as a positive influence on the union".">Unionist</span>!} strength: [+ unionists_strength : strength +], dissent: [+ unionists_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
-
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if intelctual > 0 : Intelctual strength: [+ intelectual_strength : strength +], dissent: [+ intelectual_dissent : dissent +]
 
 
 @paramilitaries
 on-arrival: {!
 if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
+    Q.rb_strength_2 = Q.jdc_strength.toFixed(1);
 }
 if (Q.rfb_strength) {
     Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
@@ -129,33 +127,30 @@ if (Q.sa_strength) {
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Joint Defense Committees are the loosely organized groups, created after the Alliance betwen CNT and FAI for the collective defense of the organizations.">Defense Committees</span>!} Strength: [+ jdc_strength_2 +] thousand
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+Joint Defence Committee Preparedness: [+ jdc_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The United Socialist Youth (Juventudes Socialista del Espana is the youth .">JSE</span>!} Strength: [+ jse_strength_2 +] thousand
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+JSE Militarization: [+ jse_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Blue Shirts are the militants from the fascist Falanga Espanola.">Blue Shirts</span>!} Strength: [+ bs_strength_2 +] thousand
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Blue Shirts Militarization: [+ bs_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
-
-SA Militarization: [+ sa_militancy : militancy +]
 
 = Official military/paramilitaries
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+The Army: [+ army_strength +] thousand troops.
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+Army Symptahy: [+ army_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+Catalunian police: [+ catalunian_police_strength +] thousand members.
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+Catalunian police sympathy: [+ catalunian_police_loyalty : loyalty +]
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+Guardias loyalty: [+ interior_police_loyalty : loyalty +]
 
 @polls
 on-arrival: {!
