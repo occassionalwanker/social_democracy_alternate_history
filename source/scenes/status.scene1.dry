@@ -104,7 +104,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Unionists see the CNT as independent entity in the struggle for worker's rights, but view anarchist principles as a positive influence on the union".">Unionist</span>!} strength: [+ unionists_strength : strength +], dissent: [+ unionists_dissent : dissent +]
 
-[? if intelctual > 0 : Intelctual strength: [+ intelectual_strength : strength +], dissent: [+ intelectual_dissent : dissent +]
+[? if intelctual > 0 : Intellectual strength: [+ intellectual_strength : strength +], dissent: [+ intellectual_dissent : dissent +]
 
 
 @paramilitaries
