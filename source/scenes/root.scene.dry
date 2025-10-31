@@ -21,8 +21,9 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 1931;
 Q.month = 1;
+Q.fortnight = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -35,8 +36,8 @@ Q.old_demographics = 0;
 // TODO: not yet implemented
 Q.use_decimals = 0;
 
-// party resources
-Q.resources = 2;
+// resources
+Q.resources = 3;
 // party dues
 Q.dues = 2;
 
@@ -46,34 +47,33 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist'];
+Q.factions = ['reformist', 'revolutionary', 'unionists', 'intellectual'];
 // should this be normalized to 100%?
-Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
+Q.reformist_strength = 45;
+Q.reformist_dissent = 20;
+Q.unionists_strength = 15;
+Q.unionist_dissent = 10;
+Q.revolutionary_strength = 35;
+Q.revolutionary_dissent = 25;
 Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.neorevisionist_dissent = 25;
 
 // secret events...
-Q.unions_independent = 0;
-Q.centrists_resign = 0;
-Q.left_split = 0;
-Q.reformists_resigned = 0;
+Q.unionists_resign = 0;
+Q.reformist_independence = 0;
+Q.revolutionary_leave = 0;
+Q.intellectual_split = 0;
 
 // have we discovered neorevisionism?
-Q.neorevisionism = 0;
+Q.intellectual = 0;
 
 // crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
-Q.crisis_urgency = 0;
+Q.olitical_urgency = 2;
 // nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
-Q.nazi_urgency = 0;
+Q.fascist_urgency = 0;
 // radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
-Q.radicalization = 0;
+Q.radicalization = 1;
+
 // Support for the WTB plan and proto-Keynesian works creation plans in general
 Q.wtb_support = 0;
 // Support for Pacifism within the SPD relative to 1928
@@ -123,7 +123,7 @@ Q.hindenburg_relation = 25;
 Q.hindenburg_enabled = 0;
 
 
-// Does the SPD lead in Prussia?
+// Does the CNT lead in Prussia?
 Q.spd_prussia = 1;
 // Options: spd, z, dnvp, papen, nsdap
 Q.prussian_government = "SPD";
