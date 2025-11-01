@@ -67,30 +67,31 @@ Q.intellectual_split = 0;
 // have we discovered neorevisionism?
 Q.intellectual = 0;
 
-// crisis_urgency indicates how seriously the SPD is taking the economic crisis - scale from 0 to 10.
-Q.olitical_urgency = 2;
-// nazi_urgency indicates how seriously the SPD takes the nazis - scale from 0 to 10.
+// crisis_urgency indicates how seriously the CNT is taking the political crisis - scale from 0 to 10.
+Q.political_urgency = 2;
+// Fascist_urgency indicates how seriously the CNT takes the FET - scale from 0 to 10.
 Q.fascist_urgency = 0;
-// radicalization indicates how radical the SPD's rhetoric is - scale from 0 to 10.
+// radicalization indicates how radical the CNT's rhetoric is - scale from 0 to 10.
 Q.radicalization = 1;
 
-// Support for the WTB plan and proto-Keynesian works creation plans in general
-Q.wtb_support = 0;
+// Support for the insurrectionary plan
+Q.ins_support = 1;
 // Support for Pacifism within the SPD relative to 1928
 Q.pacifism = 0;
 // Support for democratic reform within the SPD relative to 1928
 Q.democratization = 0;
-// Support for a communist coalition relative to 1928
-Q.communist_coalition = 0;
+// Support for a socailist collaboration relative to 1931
+Q.socialist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
-// 1 - WTB plan, 2 - AfA-bund plan, 3 - radical plan (mass nationalization of industries)
+// 1 - Centralist plan, 2 - Decentralized bund plan, 3 - Reformist plan 
 Q.economic_plan = 0;
-// have we officially adopted the WTB plan?
-Q.wtb_adopted = 0;
-// have we formed the iron front?
-Q.iron_front_formed = 0;
-// people's party support
-Q.peoples_party_support = 0;
+// Support for restructuring of the union for a more disciplined framework
+Q.centralization_support = 0
+// have we formed the united front?
+Q.united_front_formed = 0;
+// People's Front government participation support
+Q.government_participation_support = 0;
+
 // support for nationalizations
 Q.nationalization_support = 0;
 Q.nationalization_adopted = 0;
@@ -101,19 +102,24 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
+Q.psoe_relation = 45;
+Q.prr_relation = 25;
+Q.rrsp_relation = 45;
+Q.esc_relation = 55;
+Q.ar_relation = 35;
+Q.ep_relation = 40;
+Q.dlr_relation = 25;
+Q.cl_relation = 25;
 // DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.ap_relation = 10;
+Q.fet_relation = 0;
 
-Q.kpd_leader = "Thälmann";
+Q.psoe_leader = "Besteiro";
 // alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
+Q.psoe_party_leader = "Besteiro";
+//could be Largo Caballero or Indalecio Prieto, later - Juan Negrin after the divison in 1937//
+Q.prr_leader = "Lerroux";
+
 Q.z_party_leader = "Marx";
 Q.nsdap_leader = "Hitler";
 
@@ -123,13 +129,13 @@ Q.hindenburg_relation = 25;
 Q.hindenburg_enabled = 0;
 
 
-// Does the CNT lead in Prussia?
-Q.spd_prussia = 1;
-// Options: spd, z, dnvp, papen, nsdap
-Q.prussian_government = "SPD";
+// Does the CNT control in Catalonia?
+Q.cnt_catalonia = 0;
+// Options: esc, lc
+Q.catlonia_government = "esc";
 
 // The array of forces - paramilitary groups
-// Number of members in 1928 (in thousands)
+// Number of members in 1931 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
 Q.rb_strength = 2000;
 Q.rb_militancy = 0.01;
