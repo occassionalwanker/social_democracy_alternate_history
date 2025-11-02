@@ -119,9 +119,8 @@ Q.psoe_leader = "Besteiro";
 Q.psoe_party_leader = "Besteiro";
 //could be Largo Caballero or Indalecio Prieto, later - Juan Negrin after the divison in 1937//
 Q.prr_leader = "Lerroux";
-
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+Q.prrs_leader = "Domingo";
+Q.esc_leader = "Macia";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -137,15 +136,15 @@ Q.catlonia_government = "esc";
 // The array of forces - paramilitary groups
 // Number of members in 1931 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
-Q.rb_strength = 2000;
-Q.rb_militancy = 0.01;
-Q.women_in_rb = 0;
-Q.rb_banned = 0;
-Q.sh_strength = 500;
-Q.sh_militancy = 0.5;
-Q.sh_banned = 0;
-Q.sh_banned_prussia = 0;
-Q.sa_strength = 80;
+Q.cnt_strength = 1000;
+Q.cnt_militancy = 0.2;
+Q.mujeres.libres = 0;
+Q.cnt_banned = 0;
+Q.bs_strength = 500;
+Q.bs = 0;
+Q.bs_militancy = 0;
+Q.bs_banned = 0;
+Q.jse_strength = 80;
 Q.sa_militancy = 0.5;
 Q.sa_banned = 0;
 Q.sa_banned_prussia = 0;
