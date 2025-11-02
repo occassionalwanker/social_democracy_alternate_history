@@ -29,7 +29,8 @@ State policy: [? if state_ally : Ally ?][? if state_tolerance : Tolerance - ?][?
 
 Faction dissent: [+ dissent_percent : dissent +]
 
-National 
+National Committee Sympathies: [? if natcom_reformist = 1 : Reformist?]; [? if natcom_revolutionary = 1 : Revolutionary?][? if natcom_intellectual = 1 : Intellectual?]
+
 
 = Government
 
@@ -152,7 +153,7 @@ Army Symptahy: [+ army_loyalty : loyalty +]
 
 Catalonian police: [+ catalunian_police_strength +] thousand members.
 
-Catalo5nian police sympathy: [+ catalunian_police_loyalty : loyalty +]
+Catalonian police sympathy: [+ catalunian_police_loyalty : loyalty +]
 
 Guardias loyalty: [+ interior_police_loyalty : loyalty +]
 
