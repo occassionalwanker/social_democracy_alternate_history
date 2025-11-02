@@ -131,13 +131,17 @@ if (Q.sa_strength) {
 
 Joint Defence Committee Preparedness: [+ jdc_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The United Socialist Youth (Juventudes Socialista del Espana is the youth .">JSE</span>!} Strength: [+ jse_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Spanish Socialist Youth (Juventudes Socialista del Espana) is the youth wing of the Workers' Socialist Party of Spain.">JSE</span>!} Strength: [+ jse_strength_2 +] thousand
 
 JSE Militarization: [+ jse_militancy : militancy +]
 
 {!<span class="tooltip-text" title="The Blue Shirts are the militants from the fascist Falanga Espanola.">Blue Shirts</span>!} Strength: [+ bs_strength_2 +] thousand
 
 Blue Shirts Militarization: [+ bs_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The United Socialist Youth>JSU</span>!} Strength: [+ jsu_strength_2 +] thousand
+
+JSU Militarization: [+ jsu_militancy : militancy +]
 
 
 = Official military/paramilitaries
