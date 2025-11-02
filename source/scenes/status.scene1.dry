@@ -151,9 +151,9 @@ The Army: [+ army_strength +] thousand troops.
 
 Army Symptahy: [+ army_loyalty : loyalty +]
 
-Catalonian police: [+ catalunian_police_strength +] thousand members.
+Catalonian police: [+ catalonian_police_strength +] thousand members.
 
-Catalonian police sympathy: [+ catalunian_police_loyalty : loyalty +]
+Catalonian police sympathy: [+ catalonian_police_loyalty : loyalty +]
 
 Guardias loyalty: [+ interior_police_loyalty : loyalty +]
 
