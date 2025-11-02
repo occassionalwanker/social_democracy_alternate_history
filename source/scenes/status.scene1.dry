@@ -29,6 +29,8 @@ State policy: [? if state_ally : Ally ?][? if state_tolerance : Tolerance - ?][?
 
 Faction dissent: [+ dissent_percent : dissent +]
 
+National 
+
 = Government
 
 President: [+ president +]
@@ -41,7 +43,6 @@ Cortes composition:
 
 # 1931: 24,44, 1933: 25, 1936: 22
 {!<span class="tooltip-text" title="Socialist Worker's Party of Spain">PSOE</span>!}: [+ psoe_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1931: 19,15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Radical Republican Party">PRR</span>!}: [+ prr +]%
 # 1931: 12,98, 1930: 13
@@ -49,7 +50,8 @@ Cortes composition:
 # 1931: 6,17, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="Republican Left of Catalonia">>ESC</span>!}: [+ esc +]%
 # 1931: 5,55, 1930: 5
-{!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ir +]%
+{!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ar +]%
+[? if ir_formed and sapd_r > 0: IR: [+ ir_r +]% ?]
 # 1931: 5,32, 1930: 7
 {!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr +]%
 # 1931: 3, 1930: 5
@@ -144,9 +146,9 @@ The Army: [+ army_strength +] thousand troops.
 
 Army Symptahy: [+ army_loyalty : loyalty +]
 
-Catalunian police: [+ catalunian_police_strength +] thousand members.
+Catalonian police: [+ catalunian_police_strength +] thousand members.
 
-Catalunian police sympathy: [+ catalunian_police_loyalty : loyalty +]
+Catalo5nian police sympathy: [+ catalunian_police_loyalty : loyalty +]
 
 Guardias loyalty: [+ interior_police_loyalty : loyalty +]
 
