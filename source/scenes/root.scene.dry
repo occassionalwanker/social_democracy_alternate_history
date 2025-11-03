@@ -76,10 +76,6 @@ Q.radicalization = 1;
 
 // Support for the insurrectionary plan
 Q.ins_support = 1;
-// Support for Pacifism within the SPD relative to 1928
-Q.pacifism = 0;
-// Support for democratic reform within the SPD relative to 1928
-Q.democratization = 0;
 // Support for a socailist collaboration relative to 1931
 Q.socialist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
@@ -187,14 +183,13 @@ Q.constructive_vonc = 0;
 Q.presidential_powers = 0;
 // allows banning of non-constitutional parties
 Q.constitutional_protection = 0;
-Q.kpd_banned = 0;
-Q.nsdap_banned = 0;
+Q.cpe_banned = 0;
+Q.fet_banned = 0;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
 // when coup_progress reaches 10 or capital_strike_progress reaches 10, there's a special event that launches the coup.
 Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
-Q.civil_war = 0;
 
 
 Q.budget = 4;
@@ -539,29 +534,24 @@ Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 
-// all the initial advisors are centrists.
-Q.wels_advisor = 1; // Otto Wels
-Q.muller_advisor = 1; // Hermann Müller
-Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
-Q.crispien_advisor = 0; // Arthur Crispien
-Q.hilferding_advisor = 1; // Rudolf Hilferding
+// pestana and sanchez are reformist
+Q.pestana_advisor = 1; // Angel Pestana
+Q.pestana_left = 0;
+Q.peiro_advisor = 1; // Joan Peiro
+Q.sanchez_advisor = 1; // Juan Lopez Sanchez
 
-// left advisors
-Q.sender_advisor = 0; // Toni Sender
-Q.levi_advisor = 0; // Paul Levi
-Q.levi_dead = 0;
+// Unionist advisors
 Q.rosenfeld_advisor = 0; // Kurt Rosenfeld
 Q.seydewitz_advisor = 0; // Max Seydewitz
 
-// centrist alternate advisors
+// Reformist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 
-// Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
-Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
+//  Revolutionary advisors
+Q.durruti_advisor = 0; // Buenaventura Durruti
+Q.ascaso_advisor = 0; // Francisco Ascaso
+Q.oliver_advisor = 0; // Juan Garcia Oliver
 Q.baade_advisor = 0; // Fritz Baade
 
 // Labor advisors
