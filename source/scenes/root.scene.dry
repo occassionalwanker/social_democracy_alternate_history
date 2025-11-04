@@ -333,15 +333,18 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Alcala-Zamora";
 // starting PM
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
+Q.pm = "Berenguer";
+Q.pm_party = 'other';
+Q.psoe_in_government = 0;
+Q.cnt_in_government = 0;
+Q.prrs_in_government = 0;
+Q.prr_in_government = 0;
+Q.ep_in_government = 0;
+Q.bp_in_government = 0;
+Q.esc_in_government = 0;
+Q.ar_in_government = 0;
+Q.ap_in_government = 0;
+Q.lc_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -382,7 +385,7 @@ Q.interior_minister_party = 'DNVP';
 Q.justice_minister = 'Hergt';
 Q.justice_minister_party = 'DNVP';
 Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
+Q.labor_minister_party = 'PSOE';
 Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
@@ -441,7 +444,7 @@ Q.eu_progress = 0;
 Q.science = 0;
 Q.education_science = 0;
 
-// Tax rates relative to 1928 baseline
+// Tax rates relative to 1931 baseline
 Q.lower_tax_rates = 0;
 Q.upper_tax_rates = 0;
 Q.tariffs = 0;
@@ -462,14 +465,16 @@ Q.n_advisors = 3;
 Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'fundraising', 'ideology',
             'inter_party_relationships', 'international_relations',
-            'iron_front', 'media', 'enemies',
-            'party_organizations', 'rally', 'reichsbanner',
-            'shuffle_leadership', 'streetfighting', 'peoples_party',
+            'popular_front', 'media', 'enemies',
+            'party_organizations', 'rally', 'defcom',
+            , 'streetfighting', 'peoples_party',
             'party_disunity',
-            // govt
+            'shuffle_leadership'
+            // FAI
+            ''
             'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-            'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
+            'police', 'catalan_affairs', 'shuffle_cabinet', 'social_welfare',
             'homosexual_rights', 'economic_policy', 'coalition_affairs',
             'war_guilt', 'womens_rights', 'economic_democracy',
             'dealing_with_toleration',
@@ -483,28 +488,28 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'understanding_enemy', 'schleichers_schemes'];
 Q.advisor_action_timer = 0;
 // party affairs timers
-Q.confronting_nazis_timer = 0;
-Q.crisis_program_timer = 0;
+Q.confronting_fascists_timer = 0;
+Q.econ_program_timer = 0;
 Q.fundraising_timer = 0;
 Q.ideology_timer = 0;
 Q.inter_party_relationships_timer = 0;
 Q.international_relations_timer = 0;
-Q.iron_front_timer = 0;
+Q.popular_front_timer = 0;
 Q.media_timer = 0;
 Q.enemies_timer = 0;
 Q.party_organizations_timer =  0;
 Q.rally_timer = 0;
-Q.reichsbanner_timer = 0;
+Q.revolution_timer = 0;
+Q.defcom_timer = 0;
 Q.shuffle_leadership_timer = 0;
 Q.streetfighting_timer = 0;
-Q.peoples_party_timer = 0;
 // n_elections is the number of elections that have happened since the start of the game.
 Q.n_elections = 0;
 // number of elections without a clear majority.
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
+Q.next_election_year = 1931;
 Q.next_election_month = 5;
 Q.next_election_time = 5;
 // government affairs timers
@@ -552,19 +557,13 @@ Q.breitscheid_advisor = 0; // Rudolf Breitscheid
 Q.durruti_advisor = 0; // Buenaventura Durruti
 Q.ascaso_advisor = 0; // Francisco Ascaso
 Q.oliver_advisor = 0; // Juan Garcia Oliver
-Q.baade_advisor = 0; // Fritz Baade
+Q.mela_advisor = 0; // Ricardo Mela
 
-// Labor advisors
-Q.leipart_advisor = 0; // Theodor Leipart
-Q.aufhauser_advisor = 0; // Siegfried Aufhäuser
-Q.woytinsky_advisor = 0; // Wladimir Woytinsky (post-1930)
+// Intellevetual advisors
+Q.santillan_advisor = 0; // Diego Abad de Santillan
+Q.montseny_advisor = 0; // Federica Montseny (post 1933)
+Q.urales_advisor = 0; // Federico Urales
 Q.wissell_advisor = 0; // Rudolf Wissell
-
-// Revisionist advisors
-Q.mierendorff_advisor = 0; // Carlo Mierendorf (post-1930)
-
-Q.leber_advisor = 0; // Julius Leber (post-1930)
-Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 
 // Nonfactional advisors
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
