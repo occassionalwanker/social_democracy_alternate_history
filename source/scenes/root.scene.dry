@@ -566,7 +566,7 @@ Q.wissell_advisor = 0; // Rudolf Wissell
 // Nonfactional advisors
 Q.urales_advisor = 0; // Federico Urales
 Q.rodrigues_advisor = 0; // Melchior Rodriguez
-Q.stampfer_advisor = 0; // Friedrich Stampfer
+Q.puente_advisor = 0; // Isaac Puente
 !}
 set-bg: img/map_2.jpg
 new-page: true
