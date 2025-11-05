@@ -105,8 +105,6 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Revolutionaries are the militant fighters who view the CNT as weapon against the state, against capitalism and the institutions of the old world in the struggle for an anarchist world.">Revolutionary</span>!} strength: [+ revolutionary_strength : strength +], dissent: [+ revolutionary_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Unionists see the CNT as independent entity in the struggle for worker's rights, but view anarchist principles as a positive influence on the union".">Unionist</span>!} strength: [+ unionists_strength : strength +], dissent: [+ unionists_dissent : dissent +]
-
 [? if intelctual > 0 : Intellectual strength: [+ intellectual_strength : strength +], dissent: [+ intellectual_dissent : dissent +]
 
 
