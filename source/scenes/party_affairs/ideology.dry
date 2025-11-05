@@ -14,23 +14,25 @@ The CNT is torn between different ideological currents. What should be our prima
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
-- @revoution: As anarchists, we must strive to defeat the sate and its capitalist, nationalist and religious allies.
-- @reformist: The Center Marxism of Karl Kautsky remains the best way to resolve our internal contradictions.
-- @labor: We should work with the trade unions to improve the lives of workers.
+- @revolution: The workers' struggle is just a part of the fight against the oppression of the state.
+- @reformist: We shall keep the union apolitical, our only struggle should be for worker's rights.
+- @unionist: We should fight for the workers, but let the anarchist spirit create the conditions for the final struggle.
 - @discard
 
-@class_struggle
+[? if intelctual > 0 : @intellectual: Working people should trust the intellectual and doctrinal authority of the anarchists. ?]
+
+@revolution
 on-arrival: {!
-if (Q.ideology && Q.ideology != "left") {
+if (Q.ideology && Q.ideology != "revolutionary") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "left"; left_strength += 10; communist_coalition += 1; left_dissent -= 5; z_relation -= 3; dvp_relation -= 5; nationalization_support += 1; kpd_relation += 3
+on-departure: ideology = "revolutionary"; left_strength += 10; socialist_coalition -= 1; revolutionary_dissent -= 5; prr_relation -= 3; fai_ties +=3; psoe_relation -= 2; Q.ins_support += 1; cpe_relation += 1; radicalization += 1
 
-The radical left of the party supports a course of class struggle, and potentially a reconcilliation with the Communists.
+The anarchist wing of the union supports the armed struggle against the state and its oppressive institutions as its main goal and favors an anarchist free federation.
 
-@centrist
+@intellectual
 on-arrival: {!
 if (Q.ideology && Q.ideology != "centrist") {
     Q.changed = 1;
