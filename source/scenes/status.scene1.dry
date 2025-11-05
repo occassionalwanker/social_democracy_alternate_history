@@ -29,7 +29,7 @@ State policy: [? if state_ally : Ally ?][? if state_tolerance : Tolerance - ?][?
 
 Faction dissent: [+ dissent_percent : dissent +]
 
-National Committee Sympathies: [? if natcom_reformist = 1 : Reformist?]; [? if natcom_revolutionary = 1 : Revolutionary?][? if natcom_intellectual = 1 : Intellectual?]
+National Committee Sympathies: [? if natcom_reformist = 1 : Reformist?]; [? if natcom_revolutionary = 1 : Revolutionary?][? if natcom_intellectual = 1 : Intellectual?][? if natcom_unionist = 1 : Unionist?]
 
 
 = Government
@@ -104,6 +104,8 @@ Economic growth: [+ economic_growth_2 +]%
 {!<span class="tooltip-text" title="The Reformists view the union as an independent, autonomous body that shouldn't serve a political ideology, but should only strive to fight for the interests of its members, even if allied with a friendly state.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Revolutionaries are the militant fighters who view the CNT as weapon against the state, against capitalism and the institutions of the old world in the struggle for an anarchist world.">Revolutionary</span>!} strength: [+ revolutionary_strength : strength +], dissent: [+ revolutionary_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The Unionists see the anarchist influence as the ideal catalyst to resolving the struggle of the workers for their rights.">Unionist</span>!} strength: [+ unionist_strength : strength +], dissent: [+ unionist_dissent : dissent +]
 
 [? if intelctual > 0 : Intellectual strength: [+ intellectual_strength : strength +], dissent: [+ intellectual_dissent : dissent +]
 
