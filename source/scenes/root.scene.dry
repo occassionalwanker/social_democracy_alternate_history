@@ -47,19 +47,22 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['reformist', 'revolutionary', 'intellectual'];
+Q.factions = ['reformist', 'revolutionary', 'unionist', 'intellectual'];
 // should this be normalized to 100%?
 Q.reformist_strength = 45;
 Q.reformist_dissent = 20;
 
-Q.revolutionary_strength = 35;
-Q.revolutionary_dissent = 25;
+Q.unionist_strength = 35;
+Q.unionist_dissent = 25;
 
+Q.revolutionary_strength = 25;
+Q.revolutionary_dissent = 20;
 
 // secret events...
 
 Q.reformist_independence = 0;
 Q.revolutionary_leave = 0;
+Q.unionist_resign = 0;
 Q.intellectual_split = 0;
 
 // have the intelelctuals formed?
@@ -71,6 +74,8 @@ Q.political_urgency = 2;
 Q.fascist_urgency = 0;
 // radicalization indicates how radical the CNT's rhetoric is - scale from 0 to 10.
 Q.radicalization = 1;
+// How close we are to the FAI - 1 to 10.
+Q.fai_ties = 2;
 
 // Support for the insurrectionary plan
 Q.ins_support = 1;
@@ -537,11 +542,15 @@ Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 
-// ALL advisors at the beginning are reformists
+// Peiro and Sanchez are unionists
 Q.pestana_advisor = 1; // Angel Pestana
 Q.pestana_left = 0;
 Q.peiro_advisor = 1; // Joan Peiro
 Q.sanchez_advisor = 1; // Juan Lopez Sanchez
+
+// Reformist alternate advisors
+Q.arin_advisor = 0; // Francesc Arin
+Q.segui_advisor = 0; // Salvador Segui
 
 // Reformist alternate advisors
 Q.arin_advisor = 0; // Francesc Arin
