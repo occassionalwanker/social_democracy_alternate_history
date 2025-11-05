@@ -47,24 +47,22 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['reformist', 'revolutionary', 'unionists', 'intellectual'];
+Q.factions = ['reformist', 'revolutionary', 'intellectual'];
 // should this be normalized to 100%?
 Q.reformist_strength = 45;
 Q.reformist_dissent = 20;
-Q.unionists_strength = 15;
-Q.unionist_dissent = 10;
+
 Q.revolutionary_strength = 35;
 Q.revolutionary_dissent = 25;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 25;
+
 
 // secret events...
-Q.unionists_resign = 0;
+
 Q.reformist_independence = 0;
 Q.revolutionary_leave = 0;
 Q.intellectual_split = 0;
 
-// have we discovered neorevisionism?
+// have the intelelctuals formed?
 Q.intellectual = 0;
 
 // crisis_urgency indicates how seriously the CNT is taking the political crisis - scale from 0 to 10.
@@ -79,7 +77,7 @@ Q.ins_support = 1;
 // Support for a socailist collaboration relative to 1931
 Q.socialist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
-// 1 - Centralist plan, 2 - Decentralized bund plan, 3 - Reformist plan 
+// 1 - Centralist plan, 2 - Decentralized plan, 3 - Reformist plan 
 Q.economic_plan = 0;
 // Support for restructuring of the union for a more disciplined framework
 Q.centralization_support = 0
@@ -106,7 +104,7 @@ Q.ar_relation = 35;
 Q.ep_relation = 40;
 Q.dlr_relation = 25;
 Q.cl_relation = 25;
-// DNVP and NSDAP are invariably hostile
+// FET and Action Popular/CEDA are invariably hostile
 Q.ap_relation = 10;
 Q.fet_relation = 0;
 
@@ -421,7 +419,7 @@ Q.pw_implemented = 0;
 Q.west_relation = 0;
 // Relations with the Eastern countries (Poland, Czechoslovakia)
 Q.east_relation = 0;
-// Relations with the Soviet Union
+// Relations with the Soviet n
 Q.soviet_relation = 0;
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
@@ -539,14 +537,11 @@ Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 
-// pestana and is reformist, the others - unionists
+// ALL advisors at the beginning are reformists
 Q.pestana_advisor = 1; // Angel Pestana
 Q.pestana_left = 0;
 Q.peiro_advisor = 1; // Joan Peiro
 Q.sanchez_advisor = 1; // Juan Lopez Sanchez
-
-// Unionist advisors
-Q.seydewitz_advisor = 0; // Max Seydewitz
 
 // Reformist alternate advisors
 Q.arin_advisor = 0; // Francesc Arin
@@ -556,7 +551,7 @@ Q.segui_advisor = 0; // Salvador Segui
 Q.durruti_advisor = 0; // Buenaventura Durruti
 Q.ascaso_advisor = 0; // Francisco Ascaso
 Q.oliver_advisor = 0; // Juan Garcia Oliver
-Q.rivas_advisor = 0; // Manuel Rivas
+
 
 // Intellectual advisors
 Q.santillan_advisor = 0; // Diego Abad de Santillan
@@ -619,7 +614,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1928
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet n that might make genuine peace a reality. 
 
 Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
 
