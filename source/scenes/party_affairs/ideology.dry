@@ -15,11 +15,12 @@ The CNT is torn between different ideological currents. What should be our prima
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @revolution: The workers' struggle is just a part of the fight against the oppression of the state.
-- @reformist: We shall keep the union apolitical, our only struggle should be for worker's rights.
 - @unionist: We should fight for the workers, but let the anarchist spirit create the conditions for the final struggle.
+- @reformist: We shall keep the union apolitical, our only struggle should be for worker's rights.
+
 - @discard
 
-[? if intelctual > 0 : @intellectual: Working people should trust the intellectual and doctrinal authority of the anarchists. ?]
+[? if intellectual > 0 : @intellectual: Working people should trust the theroretical and doctrinal authority of the anarchists on the matter of struggle. ?]
 
 @revolution
 on-arrival: {!
@@ -28,44 +29,44 @@ if (Q.ideology && Q.ideology != "revolutionary") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "revolutionary"; left_strength += 10; socialist_coalition -= 1; revolutionary_dissent -= 5; prr_relation -= 3; fai_ties +=3; psoe_relation -= 2; Q.ins_support += 1; cpe_relation += 1; radicalization += 1
+on-departure: ideology = "revolutionary"; revolutionary_strength += 10; socialist_coalition -==  1; revolutionary_dissent -= 5; prr_relation -= 3; fai_ties +=1; psoe_relation -= 2; reformist_dissent -= 5; ins_support += 1; radicalization += 1
 
 The anarchist wing of the union supports the armed struggle against the state and its oppressive institutions as its main goal and favors an anarchist free federation.
 
-@intellectual
+@unionist
 on-arrival: {!
-if (Q.ideology && Q.ideology != "centrist") {
+if (Q.ideology && Q.ideology != "unionist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "centrist"; center_strength += 10; center_dissent -= 10; left_dissent -= 5; reformist_dissent -= 5
+on-departure: ideology = "unionist"; unionist_strength += 10; unionist_dissent -= 10; revolutionary_dissent -= 5; socialist_coalition += 1
 
-The Center Marxists, represented by Kautsky and Hilferding, support a middle course of preparing for revolution while building up the consciousness of the working class.
+The The Unionists represent the moderate between the proponents of anarchist revolution and those of apolitical syndicalism.
 
-@labor
-on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
-    Q.changed = 1;
-}
-!}
-go-to: changed if changed = 1
-on-departure: ideology = "labor"; labor_strength += 10; wtb_support += 1; labor_dissent -= 5; kpd_relation -= 3
-
-The labor wing of the party supports continued particpation in government in order to provide benefits to the workers, and the creation of public works programs for employment.
-
-@reform
+@reformist
 on-arrival: {!
 if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; democratization += 1; reformist_dissent -= 5; z_relation += 5; dvp_relation += 5; kpd_relation -= 8; moderate_plan_support += 1
+on-departure: ideology = "reformist"; reformist_strength += 10; wtb_support += 1; reformist_dissent -= 5; fai_relation -= 1; prr_relation += 2; socialist_coalition += 1; radicalization -= 1
 
-The reformist wing of the party seeks to preserve the Republic and the democratic system of government, and is most supportive of coalitions with the other pro-democracy parties.
+The reformist union leaders support cooperation with the republican forces in order to provide benefits to the workers, while claiming that a union should be apolitical in terms of ideology.
+
+@intellectual
+on-arrival: {!
+if (Q.ideology && Q.ideology != "intellectual") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "intellectual"; intellectual_strength += 10; intellectual_dissent -= 5; cpe_relation += 1; moderate_plan_support += 1; centralization_support +=1; fai_ties +=1
+
+The so-called "intellectuals" of the Nervio group strive for a revolution through anarchist discipline and prctical and theoretical unity in action.
 
 @changed
-on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5
+on-arrival: revolutionary_dissent += 5; unionist_dissent += 5; reformist_dissent += 5; intellectual_dissent += 5
 
 We have changed ideologies. Many in the party feel unmoored.
