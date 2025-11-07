@@ -7,12 +7,13 @@ card-image: img/flags.jpg
 frequency: 100
 tags: party_affairs
 
-= Campaigning
+= Edcuation
 
-Whether or not we revolutioanries, the education of the the people of the world is essential for its emancipation. Where shall we educate?
+Whether or not we revolutioanries, the education of the the people is essential for their emancipation. Whom shall we focus on?
 
 - @workers: The urban working class, our traditional support base.
 - @middle: The "middle class" of government employees and white-collar workers.
+- @ruralmiddle: The class of rural arendatorios, who serve as middle men and "managers" between the landowners and the rural workers.
 - @rural: Rural workers, who have felt neglected by political establishment in the past.
 - @catholics: Catholics, who typically support the rightist parties.
 - @root: We either don't want to or cannot campaign right now.
