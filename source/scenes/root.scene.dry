@@ -78,6 +78,7 @@ Q.radicalization = 1;
 Q.fai_ties = 2;
 // Support for restructuring of the union for a more disciplined framework - 1 to 10.
 Q.centralization_support = 0
+Q.expropriation = 0
 
 // Support for the insurrectionary plan
 Q.ins_support = 1;
