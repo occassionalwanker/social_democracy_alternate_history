@@ -57,14 +57,7 @@ We have increased our education efforts among the landless rural workers. [? if 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_cnt += 2*(1-dissent); catholic_cnt -= 6*(1-dissent) if revolutionary_strength >= 39; resources -= 1; catholic_cnt += 2 if reformist_strength >=59;
+on-arrival: catholic_cnt += 2*(1-dissent); catholic_cnt -= 6*(1-dissent) if revolutionary_strength >= 39; resources -= 1; catholic_cnt += 6*(1-dissent) if reformist_strength >=59;; resources -= 1 
 
 We have tried to reeducate the devout catholics. [? if revolutionary_strength >= 39: The catholics despise our athiest and anti-establishment ideas. ?][? if reformist_strength >=59: Our more moderate views make us more amenable to the catholics in Spain. ?]
 
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: peoples_party == 1
-on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
-
-We have increased our campaigning among Catholics.
