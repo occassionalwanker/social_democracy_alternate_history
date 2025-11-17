@@ -92,6 +92,7 @@ Q.united_front_formed = 0;
 // People's Front government participation support
 Q.government_participation_support = 0;
 
+
 // support for centralist plan
 Q.centalist_support = 0;
 Q.centalist_adopted = 0;
@@ -100,6 +101,7 @@ Q.moderate_plan_support = 0;
 Q.moderate_plan_adopted = 0;
 Q.decentalist_support = 0;
 Q.decentalist_adopted = 0;
+Q.feminism == 0;
 
 // organizations
 
