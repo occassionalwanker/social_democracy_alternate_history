@@ -9,26 +9,20 @@ max-visits: 1
 
 = Feminism and Anarchism
 
-With the rise of revolutionary rhetoric in the CNT and the closer collaboration with the FAI, among the intellectual anarchist circles rises the question of the role of the women in the struggle. The women in those circles demand that we count patrirachy among the hierarchical evils we fight, as bad as capitalism and statism. Others (mostly men) argue that we will have time for sexual emancipation after we finish the revolution and we should not distract ourselves with individualistic pursuits of hollow social justice. Which faction gains the upper hand?
+With the rise of revolutionary rhetoric in the CNT and the closer collaboration with the FAI, among the anarchist circles rises the question of the role of the women in the struggle. The women in those circles are organising lectures on women's health and rights, distributing magazines about the theory and practice of the struggle for equality and now demand that we count patrirachy among the hierarchical evils we fight, as bad as capitalism and statism. Other anarchists (mostly men) argue that we will have time for sexual emancipation after we finish the revolution and we should not distract ourselves from our real goal - the emancipation of the working class. Which faction gains the upper hand?
 
-- @restart: Restart the inquiry.
-- @root: Do nothing.
+- @embrace: Embrace the feminists.
+- @root: Let's not distract ourselves.
 - @easy_discard
 - @cancel_advisor_action
 
-@restart
-on-arrival: war_guilt += 1
+@embrace
+on-arrival: feminism += 1
 
-What is the goal of this tribunal?
+We must all understand that the struggle for equality and against hierarchy is intrinsically connected witht he fight against patriarchy. Who, if not the women, shall fight for their rights?
 
-- @pure_history: To provide a historical record of the events of the war.
-- @rewrite: To revise the popular German histories and finally put to rest the "stabbed in the back" myth.
 
-@pure_history
+@embrace
+on-arrival: feminism == -1
 
-The history is being compiled, as it always has been.
-
-@rewrite
-on-arrival: pacifism += 1; nationalism -= 5*(1-dissent); pro_republic += 5*(1-dissent); coup_progress += 1
-
-Destroying the "stabbed in the back" myth, in addition to finally correcting the historical record, would do a great deal to improve our party's reputation. This is why it would be resisted by the military establishment every step of the way.
+Their initiative is highly commendable, but the struggle that really matters is the class war. Men or women, we are all workers, after all.
