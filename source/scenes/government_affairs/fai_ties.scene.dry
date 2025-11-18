@@ -11,26 +11,47 @@ tags: govt_affairs, cabinet
 The Federation of Anarchists of Iberia (FAI) is the loosely organised net of anarchist collectives in Spain and Portugal. Since the trabazon (compact) of 1928 the CNT and the FAI have been working more closely and closely, while still keeping a distance. Shall we deepen this bond between natural allies or are we not indpenfent enough not to need the anarchists and their chaotic tendencies?
 
 - @insurrection: Rally the comrade and prepare for a revolution.
-- @discussions: Organize a seminar about the virtues of anarchist discipline.
+- @discussions: Organize series of discussions about the virtues of anarchist discipline.
 - @union: Rally support for unionist action.
 - @small: Let's meet with tehir leaders and coordinate on common tactics.
 - @root: We don't need them.
 - @easy_discard
 - @cancel_advisor_action
 
-@Insurrection
+@insurrection
 subtitle: -2 resources
 unavailable-subtitle: Not enough resources.
 view-if: revolutionary_strength >= 45 and ins_support >= 3;
 choose-if: resources >= 2
 on-arrival: resources -= 2; insur_support += 1; fai_ties += 10;
 
-We have decided to cooperate with the rest of the anarchists towards a revolution. We should strngthen our comrades' resolve and distribute weapons and valuable knowledge.
+We have decided to cooperate with the rest of the anarchists towards a revolution. We should strengthen our comrades' resolve and distribute weapons and valuable knowledge.
 
-@minor_reforms
-on-arrival: democratization += 1; workers_spd += 3*(1-dissent) if democratization >= 3; judicial_reform += 1; pro_republic += 3*(1-dissent); judiciary_timer += 6
+@discussions
+subtitle: -2 resources
+unavailable-subtitle: Not enough resources.
+view-if: intellectual;_strength >= 45 and centralization_support >= 2;
+choose-if: resources >= 2
+on-arrival: resources -= 2; centralization_support += 1; fai_ties += 5; decentralist_support += 1;
 
-We try to remove the most obviously biased and corrupt jurists, while leaving most of the system intact. It is slow work reforming the judiciary.
+We have decided to host discussions in the big cities where leading anarchist theoreticians can teach our union men about anarchist values and discipline.
 
-@as_is
+@union
+subtitle: -2 resources
+unavailable-subtitle: Not enough resources.
+view-if: union;_strength >= 35 and reformist_support >= 30;
+choose-if: resources >= 2
+on-arrival: resources -= 2; moderate_plan_support += 1; fai_ties += 5; centalist_support += 1;
+
+We have decided to collaborate with anarchists on strikes. Even though we are asserting our independence as a union, anarchist values can prove to be beneficial to the working class.
+
+@small
+subtitle: -1 resources
+unavailable-subtitle: Not enough resources.
+choose-if: resources >= 1
+on-arrival: resources -= 1; fai_ties += 5;
+
+We have met with the FAI leadership and have worked out an agreement, even if abstract, to work together towards our common goals.
+
+@root
 go-to: root
