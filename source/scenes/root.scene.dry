@@ -158,9 +158,9 @@ Q.interior_police_strength = 50;
 Q.interior_police_militancy = 1;
 Q.interior_police_loyalty = 0.20;
 
-Q.catalonian_polic_strength = 20;
-Q.catalonian_polic_militancy = 1;
-Q.catalonian_polic_loyalty = 0.25;
+Q.catalonian_police_strength = 20;
+Q.catalonian_police_militancy = 1;
+Q.catalonian_police_loyalty = 0.25;
 
 // strength includes actual military and de facto reserves?
 Q.army_strength = 100;
