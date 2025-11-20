@@ -103,6 +103,15 @@ Q.decentralist_support = 0;
 Q.decentralist_adopted = 0;
 Q.feminism == 0;
 
+//Local support
+
+Q.seville == 0
+Q.barcelona == 1
+Q.valencia == 0
+Q.asturias == 0
+Q.madrid == 0
+Q.zaragoza == 1
+
 // organizations
 
 // inter-party relations
@@ -132,7 +141,9 @@ Q.hindenburg_relation = 25;
 Q.hindenburg_enabled = 0;
 
 //National Committee
-Q.natcom_reformist=1;
+Q.natcom_reformist= 1;
+Q.natcom_rev == 0;
+Q.natcom.intellectual == 0;
 
 // Does the CNT control in Catalonia?
 Q.cnt_catalonia = 0;
