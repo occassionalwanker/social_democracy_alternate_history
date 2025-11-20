@@ -52,7 +52,7 @@ Cortes composition:
 {!<span class="tooltip-text" title="Republican Left of Catalonia">>ESC</span>!}: [+ esc +]%
 # 1931: 5,55, 1930: 5
 {!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ar +]%
-[? if ir_formed and sapd_r > 0: IR: [+ ir_r +]% ?]
+[? if ir_formed > 0: IR: [+ ir_r +]% ?]
 # 1931: 5,32, 1930: 7
 {!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr +]%
 # 1931: 3, 1930: 5
