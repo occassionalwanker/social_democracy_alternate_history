@@ -5,18 +5,39 @@ tags: party_affairs
 view-if: strike_timer <= 0
 on-arrival: fortnight_actions += 1; strike_timer = 6
 card-image: img/protest.jpg
-go-to: main_rally; police_disrupt if interior_police_strength > 180 and 
+go-to: main_strike; police_disrupt if interior_police_strength > 180 and 
 
 @choose location
 
-@sa_disrupt
+Injustice is rampant in all of Spain, where shall we strike?
 
-The Nazi SA has disrupted our rally! Their street troops are preventing us from meeting.
+- @barcelona: We strike in Barcelona, in Catalunia!
+- @sevilla: We strike in Sevilla, in Andalusia!
+- @valencia: We strike in Valencia, in Levante!
+- @asturias: We strike in Oviedo, in Asturias!
+- @madrid: We strike in Madrid, in the capital!
+- @asturias: We strike in Zaragoza, in Aragon!
+- @cancel: It's not the right time.
 
-- @police_protect: Call the police to protect our rally.
-- @rb_protect: Use the Reichsbanner to protect our rally.
-- @both_protect: The police and Reichsbanner should work together to protect our rally.
-- @cancel: Cancel the rally.
+@barcelona: We strike in Barcelona, in Catalunia!
+on-arrival: barcelona += 1; if esc_in_government == 1, esc_relation -= 10; if esc_in_government == 0, esc_relation += 10; ;
+go-to: main_strike
+
+@sevilla: We strike in Sevilla, in Andalusia!
+on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 10;
+go-to: main_strike
+
+@valencia: We strike in Valencia, in Levante!
+on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
+go-to: main_strike
+
+@valencia: We strike in Oviedo, in Asturias!
+on-arrival: asturias += 1; if psoe_in_government == 1, psoe_relation -= 15; if psoe_in_government == 0, psoe_relation += 10;
+go-to: main_strike
+
+@madrid: We strike in Madrid, in the capital!
+on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 15 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -=15 ]; if psoe_in_government == 0, psoe_relation += 10; if ar_in_government == 1, ar_relation -= 15;
+go-to: main_strike
 
 @police_protect
 view-if: spd_prussia == 1
