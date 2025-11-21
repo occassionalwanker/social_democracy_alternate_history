@@ -123,6 +123,7 @@ Q.ar_relation = 35;
 Q.ep_relation = 40;
 Q.dlr_relation = 25;
 Q.cl_relation = 25;
+Q.cpe_relation = 15;
 // FET and Action Popular/CEDA are invariably hostile
 Q.ap_relation = 10;
 Q.fet_relation = 0;
