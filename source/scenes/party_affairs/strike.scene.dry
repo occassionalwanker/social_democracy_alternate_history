@@ -1,4 +1,4 @@
-title: Strike
+title: Rally
 new-page: true
 is-card: true
 tags: party_affairs
@@ -9,53 +9,55 @@ go-to: main_strike
 
 @choose location
 
-Injustice is rampant in all of Spain, where shall we strike?
+A rally is not only a demonstration in the struggle for rights, it also rallies the working class, the union and its allies. Thus it's of strategic importance where shall we summon the workers so that we can show our presence in the region.
 
-- @barcelona: We strike in Barcelona, in Catalunia!
-- @sevilla: We strike in Sevilla, in Andalusia!
-- @valencia: We strike in Valencia, in Levante!
-- @asturias: We strike in Oviedo, in Asturias!
-- @madrid: We strike in Madrid, in the capital!
-- @zaragoza: We strike in Zaragoza, in Aragon!
+- @barcelona: We rally in Barcelona, in Catalunia!
+- @sevilla: We rally in Sevilla, in Andalusia!
+- @valencia: We rally in Valencia, in Levante!
+- @asturias: We rally in Oviedo, in Asturias!
+- @madrid: We rally in Madrid, in the capital!
+- @zaragoza: We rally in Zaragoza, in Aragon!
 - @cancel: It's not the right time.
 
-@barcelona: We strike in Barcelona, in Catalunia!
+@barcelona: We rally in Barcelona, in Catalunia!
 on-arrival: barcelona += 1; if esc_in_government == 1, esc_relation -= 10; if esc_in_government == 0, esc_relation += 10; ;
 go-to: main_strike
 
-@sevilla: We strike in Sevilla, in Andalusia!
+@sevilla: We rally in Sevilla, in Andalusia!
 on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 10; cpe_relation -= 10;
 go-to: main_strike
 
-@valencia: We strike in Valencia, in Levante!
+@valencia: We rally in Valencia, in Levante!
 on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
 go-to: main_strike
 
-@valencia: We strike in Oviedo, in Asturias!
+@valencia: We rally in Oviedo, in Asturias!
 on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
 go-to: main_strike
 
-@madrid: We strike in Madrid, the capital!
+@madrid: We rally in Madrid, the capital!
 on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 15 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -=15 ]; if psoe_in_government == 0, psoe_relation += 10; if ar_in_government == 1, ar_relation -= 15 ?]
 go-to: main_strike
 
-@zaragoza: We strike in Zaragoza, in Aragon!
+@zaragoza: We rally in Zaragoza, in Aragon!
 on-arrival: zaragoza += 1; 
 go-to: main_strike
 
 @main_rally
 
-Mass rallies are a common feature of social democratic life, especially in the lead-up to an election. What is the primary theme of this rally?
+What shall we rally about? Which aspect of our struggle deserves the most attention and how shall we rally?
 
-- @class_struggle: The class struggle of the proletariat against the bourgeoisie.
-- @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against dictatorship and fascism.
-- @pacifism: Opposing war, nationalism, and militarism at all costs.
-- @wtb: Support the WTB plan!
-- @local: A mixture of various local and national concerns that resonate most with the audience.
+- @violence: We have the strength and numbers to let our fury rage against the powers that be!
+- @classwar: We rally in support of the strike and are ready for escalations!
+- @antifa: In our opposition to the rising fascism, nationalism and fervent clericalism we can expect provocations!
+- @support: We rally in support of our allies and the politics that support the unions
+- @ugt: We rally together with our comrades from the UGT to oppose exploitation and privilege!
+- @anti-violence: We are too weak for something too radical, yet we cannot be silent else justice will prevail!
 - @easy_discard
 
-@class_struggle
+@violence
+choose-if: return_to_normalcy = 0
+unavailable-subtitle: The economic crisis is largely over now, and the public is no longer interested in hearing about it.
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent) if left_strength > reformist_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2;
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
