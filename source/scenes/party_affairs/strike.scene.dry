@@ -5,7 +5,7 @@ tags: party_affairs
 view-if: strike_timer <= 0
 on-arrival: fortnight_actions += 1; strike_timer = 6
 card-image: img/protest.jpg
-go-to: main_strike; police_disrupt if interior_police_strength > 180 and 
+go-to: main_strike
 
 @choose location
 
@@ -16,7 +16,7 @@ Injustice is rampant in all of Spain, where shall we strike?
 - @valencia: We strike in Valencia, in Levante!
 - @asturias: We strike in Oviedo, in Asturias!
 - @madrid: We strike in Madrid, in the capital!
-- @asturias: We strike in Zaragoza, in Aragon!
+- @zaragoza: We strike in Zaragoza, in Aragon!
 - @cancel: It's not the right time.
 
 @barcelona: We strike in Barcelona, in Catalunia!
@@ -24,7 +24,7 @@ on-arrival: barcelona += 1; if esc_in_government == 1, esc_relation -= 10; if es
 go-to: main_strike
 
 @sevilla: We strike in Sevilla, in Andalusia!
-on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 10;
+on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 10; cpe_relation -= 10;
 go-to: main_strike
 
 @valencia: We strike in Valencia, in Levante!
@@ -32,64 +32,16 @@ on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
 go-to: main_strike
 
 @valencia: We strike in Oviedo, in Asturias!
-on-arrival: asturias += 1; if psoe_in_government == 1, psoe_relation -= 15; if psoe_in_government == 0, psoe_relation += 10;
+on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
 go-to: main_strike
 
-@madrid: We strike in Madrid, in the capital!
-on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 15 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -=15 ]; if psoe_in_government == 0, psoe_relation += 10; if ar_in_government == 1, ar_relation -= 15;
+@madrid: We strike in Madrid, the capital!
+on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 15 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -=15 ]; if psoe_in_government == 0, psoe_relation += 10; if ar_in_government == 1, ar_relation -= 15 ?]
 go-to: main_strike
 
-@police_protect
-view-if: spd_prussia == 1
-on-arrival: police_protect_success = prussian_police_loyalty * prussian_police_militancy * prussian_police_strength*2 - sa_militancy*sa_strength;
-go-to: police_protect_win if police_protect_success >= 0; police_protect_lose if police_protect_success < 0
-
-@police_protect_win
-go-to: main_rally
-
-The police successfully protected our rally, so it can go ahead as usual.
-
-@police_protect_lose
-on-arrival: strife += 1; workers_nsdap += 3
-
-Unfortunately, the police were unable or unwilling to hold back the SA mob. The Nazis have won this show of strength.
-
-@rb_protect
-on-arrival: rb_success = rb_strength*rb_militancy - sa_strength*sa_militancy; strife += 1
-go-to: rb_protect_win if rb_success >= 0; rb_protect_lose if rb_success < 0
-
-@rb_protect_win
-go-to: main_rally
-
-The Reichsbanner has successfully protected our rally against the SA! Our meeting can go ahead as usual.
-
-@rb_protect_lose
-on-arrival: workers_nsdap += 3; rb_strength -= 50
-
-Unfortunately, the Reichsbanner was not able to hold back the SA mob. The Nazis have won this show of strength.
-
-@both_protect
-view-if: spd_prussia
-choose-if: prussian_police_training > 0
-unavailable-subtitle: The loyal sections of the police have never coordinated with the Reichsbanner before.
-on-arrival: rb_success = rb_strength*rb_militancy - sa_strength*sa_militancy + prussian_police_loyalty*prussian_police_militancy*prussian_police_strength*2; strife += 1
-go-to: both_protect_win if rb_success >= 0; both_protect_lose if rb_success < 0
-
-@both_protect_win
-go-to: main_rally
-
-The police and Reichsbanner have successfully protected our rally against the SA! Our meeting can go ahead as usual.
-
-@both_protect_lose
-on-arrival: workers_nsdap += 3; rb_strength -= 50
-
-Unfortunately, the police and Reichsbanner were not able to hold back the SA mob. The Nazis have won this show of strength.
-
-
-@cancel
-on-arrival: workers_nsdap += 3;
-
-The SA have won this show of strength.
+@zaragoza: We strike in Zaragoza, in Aragon!
+on-arrival: zaragoza += 1; 
+go-to: main_strike
 
 @main_rally
 
