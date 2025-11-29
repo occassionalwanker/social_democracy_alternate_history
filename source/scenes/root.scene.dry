@@ -102,6 +102,7 @@ Q.moderate_plan_adopted = 0;
 Q.decentralist_support = 0;
 Q.decentralist_adopted = 0;
 Q.feminism == 0;
+Q.strike == 0;
 
 //Local support
 
