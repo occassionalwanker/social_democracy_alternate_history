@@ -187,7 +187,7 @@ Q.army_loyalty = 0.2;
 // Nationalism vs. Internationalism
 Q.nationalism = 50;
 // socialism/anarchism vs capitalism
-Q.socialism = 50;
+Q.socialism = 30;
 Q.anarchism = 10;
 // pro-republic vs pro-monarchy
 Q.pro_republic = 70;
