@@ -58,14 +58,16 @@ What shall we rally about? Which aspect of our struggle deserves the most attent
 @violence
 choose-if: ins_support >= 4;
 unavailable-subtitle: We are not ready for a violent riot yet and the situation does not demand it.
-on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 10; ir_relation -= 15;  esc_relation -= 10; revolutionary_strength += 5; left_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2;
+on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 10; ir_relation -= 15;  esc_relation -= 10; revolutionary_strength += 5; left_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; 
 
 Peaceful protesting won't get us very far, we are ready and we know we need to fight for our rights. If the bosses and politicans won't listen to us, we will make them fear us!  [? revolutionary_strength >= 50 : Our revolutionary rhetoric matches our radical actions. ?]
 
 @classwar
-on-arrival: workers_spd += 3*(1-dissent); workers_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 3*(1-dissent) if welfare > 0; unemployed_spd += 4*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
+choose-if: unionist_strength <= 40;
+unavailable-subtitle: The class struggle will be resolved in the right time, we are not ready yet.
+on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 6*(1-dissent) if anarchism >= 50; workers_cnt += 4*(1-dissent) if socialism >= 50; radicalization += 1; if psoe_in_government == 1, psoe_relation += 5; if psoe_in_government == 0, psoe_relation += 10;
 
-The reformist message appeals to the organized workers, whose benefits are the accomplishments of social democracy. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+Workers  resonatw with our radical rhetoric of class war and workers's unity. [? if anarchism > 50 : The mass appeal of anarchist ideas makes the working class more receptive to our message. ?]  [? if socialism > 50 : The mass appeal of socialst ideas makes the working class somewhat more receptive to our message. ?] 
 
 @democracy
 on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
