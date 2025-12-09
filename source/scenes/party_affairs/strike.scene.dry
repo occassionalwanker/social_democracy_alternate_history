@@ -20,23 +20,23 @@ A rally is not only a demonstration in the struggle for rights, it also rallies 
 - @cancel: It's not the right time.
 
 @barcelona: We rally in Barcelona, in Catalunia!
-on-arrival: barcelona += 1; if esc_in_government == 1, esc_relation -= 10; if esc_in_government == 0, esc_relation += 10; ;
+on-arrival: barcelona += 1; if esc_in_government == 1, esc_relation -= 5; if esc_in_government == 0, esc_relation += 5; ;
 go-to: main_strike
 
 @sevilla: We rally in Sevilla, in Andalusia!
-on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 10; cpe_relation -= 10;
+on-arrival: seville += 1; if psoe_in_government == 1, psoe_relation -= 5; cpe_relation -= 5;
 go-to: main_strike
 
 @valencia: We rally in Valencia, in Levante!
-on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
+on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 5;
 go-to: main_strike
 
 @valencia: We rally in Oviedo, in Asturias!
-on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 10;
+on-arrival: valencia += 1; if psoe_in_government == 1, psoe_relation -= 5;
 go-to: main_strike
 
 @madrid: We rally in Madrid, the capital!
-on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 15 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -=15 ]; [if psoe_in_government == 0, psoe_relation += 10;] [if ar_in_government == 1, ar_relation -= 15 ?]
+on-arrival: madrid += 1; if ar_in_government == 1, ar_relation -= 5 else [? if ir_formed > 0 and ir_in_government == 1, ir_relation -= 5 ]; [if psoe_in_government == 0, psoe_relation += 5;] [if ar_in_government == 1, ar_relation -= 5 ?]
 
 @zaragoza: We rally in Zaragoza, in Aragon!
 on-arrival: zaragoza += 1; 
