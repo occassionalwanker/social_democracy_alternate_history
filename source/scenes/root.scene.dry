@@ -193,7 +193,7 @@ Q.anarchism = 10;
 Q.pro_republic = 70;
 Q.popular_front =0;
 
-Q.emergency_rule = 0;
+Q.emergency_rule = 1;
 
 // minimum percentage of votes to be represented in the Cortes
 Q.electoral_threshold = 0;
