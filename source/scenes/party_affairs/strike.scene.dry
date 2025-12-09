@@ -58,24 +58,24 @@ What shall we rally about? Which aspect of our struggle deserves the most attent
 @violence
 choose-if: ins_support >= 4;
 unavailable-subtitle: We are not ready for a violent riot yet and the situation does not demand it.
-on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 10; ir_relation -= 15;  esc_relation -= 10; revolutionary_strength += 5; left_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; 
+on-arrival: political_urgency += 1; workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 10; ir_relation -= 15;  esc_relation -= 10; revolutionary_strength += 5; left_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; radicalization += 1;
 
 Peaceful protesting won't get us very far, we are ready and we know we need to fight for our rights. If the bosses and politicans won't listen to us, we will make them fear us!  [? revolutionary_strength >= 50 : Our revolutionary rhetoric matches our radical actions. ?]
 
 @classwar
 choose-if: unionist_strength <= 40;
 unavailable-subtitle: The class struggle will be resolved in the right time, we are not ready yet.
-on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 6*(1-dissent) if anarchism >= 50; workers_cnt += 4*(1-dissent) if socialism >= 50; radicalization += 1; if psoe_in_government == 1, psoe_relation += 5; if psoe_in_government == 0, psoe_relation += 10;
+on-arrival: political_urgency += 1; workers_cnt += 3*(1-dissent); workers_cnt += 6*(1-dissent) if anarchism >= 50; workers_cnt += 4*(1-dissent) if socialism >= 50; radicalization += 1; if psoe_in_government == 1, psoe_relation += 5; if psoe_in_government == 0, psoe_relation += 10;
 
-Workers  resonatw with our radical rhetoric of class war and workers's unity. [? if anarchism > 50 : The mass appeal of anarchist ideas makes the working class more receptive to our message. ?]  [? if socialism > 50 : The mass appeal of socialst ideas makes the working class somewhat more receptive to our message. ?] 
+Workers  resonate with our radical rhetoric of class war and workers's unity. [? if anarchism > 50 : The mass appeal of anarchist ideas makes the working class more receptive to our message. ?]  [? if socialism > 50 : The mass appeal of socialst ideas makes the working class somewhat more receptive to our message. ?] 
 
-@democracy
-on-arrival: democratization += 1; pro_republic += 2*(1 - dissent); workers_spd += 4*(1-dissent) if democratization >= 3; unemployed_spd += 3*(1-dissent) if democratization >= 3; pro_republic += 4*(1 - dissent) if democratization >= 3; new_middle_spd += 4*(1-dissent) if democratization >= 3 
+@antifa
+choose-if: popular_front >= 0; fascist_urgency >= 3;
+show-if: nationalism >= 60;
+unavailable-subtitle: As troubling as the rightist rising is, there are more important battles ahead of us.
+on-arrival: psoe_relation += 5; ir_relation += 5; esc_relation += 5; fascist_urgency = +1; cnt_militancy += 0.1; 
 
-Our speakers defend the republican system and rail against the monarchists and authoritarians who threaten it.
-
-[? if democratization < 3 : Talk of democracy does not excite the workers as much as more practical issues. But that may change; part of our job is to provide political education to the proletariat. ?]
-[? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the workers are enthusiastic about our message. ?]
+Against the fascist threat, we can only triumph together! We have learned from the German and Italian expereience and we know that only the united strength of the working class will not let them pass!
 
 @pacifism
 on-arrival: pacifism += 1; nationalism -= 2*(1 - dissent); workers_spd += 4*(1 - dissent) if pacifism >= 3; unemployed_spd += 3*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; new_middle_spd += 4*(1-dissent) if pacifism >= 3
