@@ -164,7 +164,7 @@ Q.bs = 0;
 Q.bs_militancy = 0;
 Q.bs_banned = 0;
 Q.jse_strength = 80;
-Q.jse_militancy = 0.5;
+Q.jse_militancy = 0.3;
 Q.jse_banned = 0;
 
 Q.interior_police_strength = 50;
@@ -185,12 +185,13 @@ Q.army_loyalty = 0.2;
 // popular opinion
 // national ideology - on a binary scale
 // Nationalism vs. Internationalism
-Q.nationalism = 50;
+Q.nationalism = 30;
 // socialism/anarchism vs capitalism
 Q.socialism = 30;
 Q.anarchism = 10;
 // pro-republic vs pro-monarchy
 Q.pro_republic = 70;
+Q.popular_front =0;
 
 Q.emergency_rule = 0;
 
