@@ -94,6 +94,6 @@ The UGT and the CNT shall together march as one! Let the status quo tremble when
 
 
 @non-violence
-on-arrival: workers_cnt += 3*(1-dissent); rural_middle_cnt += 1*(1-dissent); middle_cnt += 2*(1-dissent); radicalization -= 1; 
+on-arrival: workers_cnt += 3*(1-dissent); rural_middle_cnt += 2*(1-dissent); middle_cnt += 1*(1-dissent); radicalization -= 1; 
 
 We don't have the strength for something more than a simple small demonstration.
