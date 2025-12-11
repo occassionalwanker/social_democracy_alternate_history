@@ -16,8 +16,8 @@ max-cards: 3
 
 [? if year = 1931 and month = 2 and fortnight = 1 : The dictatorship is living it's last days and one can see a new Spain being born from the pain of the old order. As the biggest union in Spain the CNT will have a decisive role to play in the next months and who knows, maybe even years. ?]
 
-- @party
-- @govt
+- @union
+- @fai
 - #advisor
 - @shuffle_leadership_pinned
 
@@ -37,25 +37,25 @@ max-cards: 4
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1928 and month = 2 : The current bourgeois-right government has fallen. The next elections are slated for May of this year. ?]
+[? if year = 1931 and month = 2 and fortnight = 1 : The dictatorship is living it's last days and one can see a new Spain being born from the pain of the old order. As the biggest union in Spain the CNT will have a decisive role to play in the next months and who knows, maybe even years. ?]
 
-- @party
-- @govt
+- @union
+- @fai
 - #advisor
 - @shuffle_leadership_pinned
 
 
-@party
+@union
 title: Union Affairs
 card-image: img/Vorwaerts_nr_1.png
 is-deck: true
 
-- #party_affairs
+- #union_affairs
 
-@govt
-title: Government Affairs
-view-if: time >= 5
+@fai
+title: FAI Affairs
+view-if: fai_ties >= 0
 card-image: img/reichstag_2.jpg
 is-deck: true
 
-- #govt_affairs
+- #fai_affairs
