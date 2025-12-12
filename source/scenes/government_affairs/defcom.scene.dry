@@ -1,0 +1,46 @@
+title: Defence Committee
+new-page: true
+is-card: true
+tags: fai_affairs
+on-arrival: defcom_timer += 6; forthnight_actions += 1
+view-if: fai_ties >= 0;
+card-image: img/portraits/LeberJulius.jpg
+#subtitle: Gather the Defence Committee of the CNT and the FAI
+
+= Defence Committee
+
+The Defence Committee, established by members of the CNT and representatives of the FAI, is the core of the trabazon (alliance) between the union and the anarchist federations. The time has come for it to gather. Given the current situation, what what shall be discussed?
+
+- @arm: Use existing resources to procure weapons, for defensive purposes.
+- @infiltrate: Increase our influence among the army and the Guardia Civil.
+- @propaganda: Ramp up recruitment efforts among the more militant collectives.
+- @cancel_advisor_action
+
+@arm
+choose-if: ins_res >= 1
+unavailable-subtitle: We do not have the funds for this.
+on-arrival: ins_res -= 1; militancy += 0.2; ins_support += 1;
+
+There are ways to procure weapons. Either through favours or through gathered funds, we only have to arm our brave fighters.
+
+@infiltrate
+subtitle: - 1 resource
+unavailable-subtitle: We can't devote funds  for this.
+choose-if: army_loyalty > 0.15
+on-arrival: 
+
+budget += 1; coalition_dissent += 1 if in_grand_coalition == 1; dvp_relation -= 8; reichswehr_militancy -= 1; reichswehr_strength -= 20; sh_strength += 15; sa_strength += 5; sh_militancy += 0.05; reichswehr_loyalty -= 0.05 if reichswehr_loyalty > 0; coup_progress += 1; coup_progress += 1 if reichswehr_loyalty < 0.2; coup_progress += 1 if reichswehr_loyalty < 0.1; coup_progress += 1 if reichswehr_loyalty <= 0; reichswehr_goal_completed = 1; economic_growth -= 0.1
+
+The military has fewer guns and fewer soldiers. There is no hint of a coup yet, but we do not know where the line will be drawn. The center-right parties are committed to the military and deeply opposed to our budget cuts.
+
+Many demobilized soldiers have joined the right-wing paramilitaries such as the Stahlhelm and SA, and weapons are missing from our stockpiles.
+
+@reform
+subtitle: -1 budget
+choose-if: budget >= 1 and reichswehr_loyalty < 1
+unavailable-subtitle: [? if budget < 1 : We do not have the budget. ?][? if reichswehr_loyalty >= 1 : The Reichswehr is already fully loyal to the democratic government. ?]
+on-arrival: coalition_dissent += 1 if in_grand_coalition == 1; reichswehr_loyalty += 0.15; reichswehr_militancy -= 0.5 if reichswehr_loyalty < 0.5; budget -= 1; coup_progress += 1; dvp_relation -= 5; pacifism += 1; democratization += 1;
+
+Our efforts are at least somewhat successful; we have changed the recruiting and training patterns so that more soldiers from non-reactionary backgrounds can join, hopefully changing the culture of the forces. We have also removed some of the officers who supported the previous Kapp putsch.
+
+The center-right parties are committed to the military and deeply suspicious of our efforts to reform it.
