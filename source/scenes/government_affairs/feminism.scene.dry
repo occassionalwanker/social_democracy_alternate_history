@@ -2,14 +2,14 @@ title: Feminism and Anarchism
 new-page: true
 is-card: true
 on-arrival: feminism_and_anarchism_timer += 6; fortnight_actions += 1
-view-if: fai_ties >= 6 and 1934 == 0 anf feminism_and_anarchism_timer = 0 and 
+view-if: fai_ties >= 6 and 1934 == 1 and feminism_and_anarchism_timer = 0 and 
 card-image: img/portraits/BaadeFritz.jpg
 max-visits: 1
-#subtitle: Realtions between anarchism and feminsim
+#subtitle: Relations between anarchism and feminsim
 
 = Feminism and Anarchism
 
-With the rise of revolutionary rhetoric in the CNT and the closer collaboration with the FAI, among the anarchist circles rises the question of the role of the women in the struggle. The women in those circles are organising lectures on women's health and rights, distributing magazines about the theory and practice of the struggle for equality and now demand that we count patrirachy among the hierarchical evils we fight, as bad as capitalism and statism. Other anarchists (mostly men) argue that we will have time for sexual emancipation after we finish the revolution and we should not distract ourselves from our real goal - the emancipation of the working class. Which faction gains the upper hand?
+With the rise of revolutionary rhetoric in the CNT and the closer collaboration with the FAI, among the anarchist circles rises the question of the role of the women in the struggle. The women in those circles are organising lectures on women's health and rights, distributing magazines about the theory and practice of the struggle for equality and now demand that we count patrirachy among the hierarchical evils we fight, as destructive as capitalism and statism. Other anarchists (mostly men) argue that we will have time for sexual emancipation after we finish the revolution and we should not distract ourselves from our real goal - the emancipation of the working class. Which faction gains the upper hand?
 
 - @embrace: Embrace the feminists.
 - @root: Let's not distract ourselves.
