@@ -82,6 +82,7 @@ Q.expropriation = 0
 
 // Support for the insurrectionary plan
 Q.ins_support = 1;
+Q.ins_res = 0; //funds for the armament of an insurrection//
 // Support for a socailist collaboration relative to 1931
 Q.socialist_coalition = 0;
 // economic_plan: have we adopted *any* economic plan?
