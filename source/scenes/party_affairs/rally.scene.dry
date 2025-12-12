@@ -57,7 +57,7 @@ What shall we rally about? Which aspect of our struggle deserves the most attent
 @violence
 choose-if: ins_support >= 4;
 unavailable-subtitle: We are not ready for a violent riot yet and the situation does not demand it.
-on-arrival: political_urgency += 1; workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 10; ir_relation -= 15;  esc_relation -= 10; revolutionary_strength += 5; left_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; 
+on-arrival: political_urgency += 1; workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 5; ir_relation -= 5;  esc_relation -= 5; revolutionary_strength += 5; revolutionary_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; 
 
 Peaceful protesting won't get us very far, we are ready and we know we need to fight for our rights. If the bosses and politicans won't listen to us, we will make them fear us!  [? revolutionary_strength >= 50 : Our revolutionary rhetoric matches our radical actions. ?]
 
@@ -80,7 +80,7 @@ We have learned from the German and Italian expereience and we know that only th
 choose-if: reformist_strength >= 45;
 view-if: popular_front >= 0;
 unavailable-subtitle: Why would we support those who persecute us and put us in the same jail as the reactionaries themselves would?
-on-arrival: workers_cnt += 3*(1-dissent); psoe_relation += 15; ir_relation += 10; esc_relation += 10; cpe_relation += 10; fascist_urgency += 1; cnt_millitancy += 0.1;  middle_cnt += 3 if reformist_plan == 1; rural_middle_cnt += 2*(1-dissent); 
+on-arrival: workers_cnt += 3*(1-dissent); psoe_relation += 10; ir_relation += 5; esc_relation += 10; cpe_relation += 10; fascist_urgency += 1; cnt_millitancy += 0.1;  middle_cnt += 3 if reformist_plan == 1; rural_middle_cnt += 2*(1-dissent); 
 
 To successfully defend the working class, we must fight with those who would be receptive and amiable to their plight, even if we have to fight to save the Republic!
 
