@@ -23,7 +23,7 @@ subtitle: -2 resources
 unavailable-subtitle: Not enough resources.
 view-if: revolutionary_strength >= 45 and ins_support >= 3;
 choose-if: resources >= 2
-on-arrival: resources -= 2; insur_support += 1; fai_ties += 10;
+on-arrival: resources -= 2; insur_support += 1; fai_ties += 10; ins_res += 1;
 
 We have decided to cooperate with the rest of the anarchists towards a revolution. We should strengthen our comrades' resolve and distribute weapons and valuable knowledge.
 
@@ -41,7 +41,7 @@ subtitle: -2 resources
 unavailable-subtitle: Not enough resources.
 view-if: union;_strength >= 35 and reformist_support >= 30;
 choose-if: resources >= 2
-on-arrival: resources -= 2; moderate_plan_support += 1; fai_ties += 5; decentalist_support += 1;
+on-arrival: resources -= 2; moderate_plan_support += 1; fai_ties += 5; decentralist_support += 1;
 
 We have decided to collaborate with anarchists on strikes. Even though we are asserting our independence as a union, anarchist values can prove to be beneficial to the working class.
 
