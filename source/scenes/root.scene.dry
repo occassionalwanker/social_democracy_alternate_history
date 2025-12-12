@@ -503,7 +503,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'party_disunity',
             'shuffle_leadership'
             // FAI
-            'fai_ties', ''
+            'fai_ties', 'feminism'
             'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'catalan_affairs', 'shuffle_cabinet', 'social_welfare',
