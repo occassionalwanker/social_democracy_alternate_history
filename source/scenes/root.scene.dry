@@ -493,15 +493,17 @@ Q.n_advisors = 3;
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
 Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
-            'fundraising', 'ideology',
+            'fundraising', 'ideology', 'streetfighting', 'education', 'rally', ''
+
+
             'inter_party_relationships', 'international_relations',
             'popular_front', 'media', 'enemies',
             'party_organizations', 'rally', 'defcom',
-            , 'streetfighting', 'peoples_party',
+            , peoples_party',
             'party_disunity',
             'shuffle_leadership'
             // FAI
-            ''
+            'fai_ties', ''
             'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
             'police', 'catalan_affairs', 'shuffle_cabinet', 'social_welfare',
