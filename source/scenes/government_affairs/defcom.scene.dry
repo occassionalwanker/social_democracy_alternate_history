@@ -41,7 +41,7 @@ on-arrival: militancy += 0.1; ins_support += 1;
 With what we have, we can try to educate our comrades on tactics and inspire the more militant members to join their local defense committee.
 
 - @root
-on-arrival: militancy += 0.1; ins_support += 1; 
+
 
 We can't or don't want to do anything about that right now.
 
