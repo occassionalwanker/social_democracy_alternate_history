@@ -92,6 +92,10 @@ Q.economic_plan = 0;
 Q.united_front_formed = 0;
 // People's Front government participation support
 Q.government_participation_support = 0;
+//Land reform position
+Q.agri_revolt = 0;
+Q.agri_union = 0;
+Q.agri_none = 0;
 
 
 // support for centralist plan
