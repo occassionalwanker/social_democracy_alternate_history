@@ -1,33 +1,24 @@
-title: The Economic Crisis
+title: The Agricultural Situation
 new-page: true
 is-card: true
-view-if: crisis_urgency >= 1 and crisis_program_timer = 0 and economic_plan = 0 and black_thursday_seen == 1
-frequency: 200
-on-arrival: month_actions += 1; crisis_program_timer = 5
+view-if: year = 1931 and month = 10 forthnight = 2 and land_reform = 1
+on-arrival: month_actions += 1; agri_situation_timer = 200
 card-image: img/bankrun.jpg
-tags: party_affairs, govt_affairs
+tags: union_affairs
 
-= Addressing the Economic Crisis
+= Addressing the Agricultrural Situation
 
-Our party is wracked as to how to deal with the economic crisis. From the centrist faction, Hilferding argues that the economic crisis must be allowed to play out, because it is simply a part of the cyclic nature of capitalism.
+The Azana government's land reform efforts have been met with... mixed reception. On one hand, the land owners and rentiers are dissatisfied with the concessions made to the land workers, the mixed juries and the wage increases. On the other haned, the land workers expected more from a government with the partcipation of the Socialists than mere half measures. The consolidation of the land workers into on region additionaly will hurt not only the seasonal workers' survival, but also the harvesting of the produce. 
+Thus, many land workers have decided to organize and ask for what they deserve. Some have even joined the UGT and the socialist union has welcomed them, no doubt to wield them as influential weapon in their fight for power.
+What shall we do? Do we support these workers and how do we do it?
 
-From labor, the economist Wladimir Woytinsky argues that we must pursue a massive public works program to reduce unemployment and stimulate demand, perhaps including deficit spending. His opponents, like Hilferding, argue that this plan will cause a return to hyper-inflation, and that it would not even help the economy. In addition, according to Hilferding, Woytinsky's strategy is opposed to Marxist principles.
+- @revolutionary: We are all comrades in the war against oppression!
+- @unionist: We should support the workers and the UGT.
+- @root: We are a worker's union, not a peasant faire!
 
-The so-called WTB plan, after its chief supporters Woytinsky, Tarnow, and Baade, is receiving more attention within the party.
-
-However, leftists in the party argue that the WTB plan is merely a bandage over the fundamental flaws of capitalism. They argue that the crisis is an opportunity to end capitalism through massive nationalizations of industry, and finally bring our country to socialism.
-
-Meanwhile, moderates and reformists draw up proposals for a limited plan of job creation through public works, funded through taxes, that does not involve deficit spending or large-scale restructuring of the economy. Labor argues that the plan is inadequate in its scale and ambition.
-
-- @support_centrist: Support the Centrist view.
-- @support_labor: Support the Labor view.
-- @support_left: Support the Left view.
-- @support_moderate: Support the Reformist view.
-- @defer: Defer making a decision until we have more information.
-
-@support_centrist
-subtitle: Let the depression play itself out.
-on-arrival: center_strength += 5; center_dissent -= 5; labor_dissent += 10; wtb_support -= 1; left_dissent += 10;
+@srevolutionary
+subtitle: Let's invite the workers to join us!
+on-arrival: revolutionary_strength += 5; intellectual_strength += 5; radicalization += 1; reformist_dissent += 5; agri_revolt += 1;
 
 Woytinsky and the trade unions vehemently criticize the centrists for their policy. The workers are starving; are we going to callously abandon them and side with bourgeois austerity? On the other hand, the centrists criticize Woytinsky for promising the workers false hope; their position is that nothing can be done to alleviate the depression. They also speak of the fear of another round of hyperinflation that may result from deficit spending.
 
