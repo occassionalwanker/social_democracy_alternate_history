@@ -139,7 +139,7 @@ Q.psoe_leader = "Besteiro";
 Q.psoe_party_leader = "Besteiro";
 Q.radical_wing == 0;
 Q.moderate_wing == 0;
-Q.equilibrium == 0;
+Q.equilibrium == 1;
 //could be Largo Caballero or Indalecio Prieto, later - Juan Negrin after the divison in 1937//
 Q.prr_leader = "Lerroux";
 Q.prrs_leader = "Domingo";
