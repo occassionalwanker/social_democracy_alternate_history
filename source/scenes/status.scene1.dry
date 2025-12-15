@@ -107,7 +107,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The Unionists see the anarchist influence as the ideal catalyst to resolving the struggle of the workers for their rights.">Unionist</span>!} strength: [+ unionist_strength : strength +], dissent: [+ unionist_dissent : dissent +]
 
-[? if intelctual > 0 : Intellectual strength: [+ intellectual_strength : strength +], dissent: [+ intellectual_dissent : dissent +]
+{!<span class="tooltip-text" title="The Intellectuals are those anarchist theoreticians who think that the CNT needs a healthy anarchist discipline and ethics to serve as the vessel of revolutionary change.">Intellectual</span>!} strength: [+ intellectual_strength : strength +], dissent: [+ intellectual_dissent : dissent +]
 
 
 @paramilitaries
