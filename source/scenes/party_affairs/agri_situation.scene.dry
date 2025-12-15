@@ -33,5 +33,6 @@ The land workers' demands are reasonable and we should support them. Yet, it wou
 @none
 subtitle: This matter doesn't concern us.
 on-arrival:  unionist_strength += 5; reformist_strength += 5; revolutionary_dissent += 10; agri_none += 1; intellectual_dissent += 10; ar_relation += 10;
+go-to: main
 
 Technically, the workers of the fields are peasants, not part of the working class. While we are sympathetic to their plight, we can offer no aid. The saving of the drowining is a job for the drowning alone, as they say.
