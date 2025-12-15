@@ -3,6 +3,7 @@ new-page: true
 is-card: true
 view-if: year = 1931 and month = 10 forthnight = 2 and land_reform = 1
 on-arrival: month_actions += 1; agri_situation_timer = 200
+frequency: 200
 card-image: img/bankrun.jpg
 tags: union_affairs
 
