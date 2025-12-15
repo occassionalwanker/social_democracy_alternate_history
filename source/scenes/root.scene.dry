@@ -371,7 +371,6 @@ Q.president = "Alcala-Zamora";
 Q.pm = "Berenguer";
 Q.pm_party = 'other';
 Q.psoe_in_government = 0;
-Q.cnt_in_government = 0;
 Q.prrs_in_government = 0;
 Q.prr_in_government = 0;
 Q.ep_in_government = 0;
