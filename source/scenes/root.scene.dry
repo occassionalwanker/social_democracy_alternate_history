@@ -123,19 +123,19 @@ Q.zaragoza == 1
 // inter-party relations
 Q.psoe_relation = 45;
 Q.prr_relation = 25;
-Q.rrsp_relation = 45;
-Q.esc_relation = 55;
+Q.prrs_relation = 45;
+Q.esq_relation = 55;
 Q.ar_relation = 35;
 Q.ep_relation = 40;
 Q.dlr_relation = 25;
 Q.cl_relation = 25;
-Q.cpe_relation = 15;
+Q.pce_relation = 15;
 // FET and Action Popular/CEDA are invariably hostile
-Q.ap_relation = 10;
+Q.ap_relation = 0;
 Q.fet_relation = 0;
 
 Q.psoe_leader = "Besteiro";
-// alternative is the Conciliators as party leader
+// after him, Prieto or Caballero take over
 Q.psoe_party_leader = "Besteiro";
 Q.radical_wing == 0;
 Q.moderate_wing == 0;
@@ -145,6 +145,7 @@ Q.prr_leader = "Lerroux";
 Q.prrs_leader = "Domingo";
 Q.esc_leader = "Macia";
 Q.pce_leader = "Diaz";
+Q.ap_leader = "Robles";
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -158,8 +159,8 @@ Q.natcom.intellectual == 0;
 
 // Does the CNT control in Catalonia?
 Q.cnt_catalonia = 0;
-// Options: esc, lc
-Q.catlonia_government = "esc";
+// Options: esq, lc
+Q.catlonia_government = "esq";
 
 // The array of forces - paramilitary groups
 // Number of members in 1931 (in thousands)
