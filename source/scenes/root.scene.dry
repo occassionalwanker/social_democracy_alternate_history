@@ -372,7 +372,7 @@ Q.economic_records = [];
 Q.president_catalonia = "integrated"
 
 // State of the government
-Q.president = "Alcala-Zamora";
+Q.president = "King Alfonso XIII";
 // starting PM
 Q.pm = "Berenguer";
 Q.pm_party = 'other';
