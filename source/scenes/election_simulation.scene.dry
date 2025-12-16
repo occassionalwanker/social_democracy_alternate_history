@@ -2,11 +2,11 @@ title: Election Simulation
 set-jump: post_election
 
 
-- @1928: 1928 historical scenario
-- @1930: 1930 historical scenario
-- @1932: 1932 (July) historical scenario
+- @1931: 1931 historical scenario
+- @1934: 1934 historical scenario
+- @1936: 1936 (July) historical scenario
 
-@1928
+@1931
 on-arrival: {!
 Q.workers = 46; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
@@ -265,13 +265,12 @@ if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
 }
 
 // coalitions
-Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
-Q.grand_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r;
-Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
-Q.center_right_coalition = Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.right_coalition = Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.far_right_coalition = Q.dnvp_r + Q.nsdap_r;
-Q.left_coalition = Q.spd_r + Q.kpd_r;
+Q.republican_coalition = Q.psoe_r + Q.prrs_r + Q.prr_r + Q.ep_r + Q.esq_r + Q.ar
+Q.right_republican_coalition = Q.dlr_r + Q.prr_r + Q.ap_r + Q.cl_r
+Q.ceda_coalition = Q.dlr_r + Q.prr_r + Q.cl_r + Q.ceda_r
+Q.popular_front_coaltion = Q.ir_r + Q.psoe_r + Q.pce_r + Q.esq_r + Q.ep_r + Q.pce_r
+Q.catholic_coalition = Q.dlr_r + Q.prr_r + Q.ceda_r + Q.cl_r + Q.fet_r + Q.ep_r
+
 // this is an absurd concept lol
 Q.united_front_coalition = Q.spd_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
 Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
