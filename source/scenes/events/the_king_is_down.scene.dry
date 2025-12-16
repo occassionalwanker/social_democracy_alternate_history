@@ -1,7 +1,7 @@
 title: The King is Down, Long Live the Republic!
 subtitle: The last days of the monarchy
 view-if: year = 1931 and month = 4 and fortnight = 1
-on-arrival: in_election += 1; next_election_month == 6; next_election_forthnight == 2; next_election_timer == 4; pm == "Alcala-Zamora"; pm_party == "DLR"; president == "none"
+on-arrival: in_election += 1; next_election_month == 6; next_election_forthnight == 2; next_election_timer == 4; pm == "Alcala-Zamora"; pm_party == "DLR"; president == "none"; president_catalonia == "Macia"
 new-page: true
 max-visits: 1
 face-image: img/portraits/SchleicherKurt.jpg
@@ -12,6 +12,7 @@ tags: event
   At the long anticipated local elections of 12 April the Republican parties triumphed. Mass spontaneous celebrations erupted in the whole country, thus signifying that the era of the monarchy is nearing its end. Protesters practically besieged the Royal Palace in Madrid. On the advice of his closest advisors the Bourbon dog Alfonso XIII decided to flee the country and on the 15 April he country awoke as a Republic! 
   Wasting no time, the politicians around the king proclaimed an amnesty for those political prisoners and exiles, persecuted under the Dictatorship and the monarchy and announced that in June this year Spain will have its first free elections as a Republic for Constituent Cortes. Meanwhile a provisional government, in which the main republican forces will participate, will rule the state.
 
+  
   This is big news for us and all of Spain. We have played our part in the Dictatorship's fall and on occasion we have had our moments of solidarity and cooperation with other republican forces. For that reason, several representatives and voices in the editor's committee of Solidaridad Obrera, led by Joan Peiro, have proposed we express our enthusiasm of the Republican triumph and our hopes for fruitfull partnership with our Republican allies. Many representatives in the National Committee from the reformist and unionist wings support Peiro's proposal.
   
   On the other hand, the anarachist firebrands who were freed after the amnesty and some of whom have returned from exile, will not hesitate to oppose the Republic and denounce it as a bourgoise oppressor. Their fiery rhetoric will surely sway the more radical members of the union and maybe Sr. Peiro's proposal wouldn't, strictly speaking, represent the vast majority of the workers in the union.
