@@ -549,11 +549,11 @@ Q.n_elections = 0;
 // number of elections without a clear majority.
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
-Q.in_election = 1;
+Q.in_election = 0;
 Q.next_election_year = 1931;
-Q.next_election_month = 4;
-Q.next_election_fortnight = 1;
-Q.next_election_time = 5;
+Q.next_election_month = 6;
+Q.next_election_fortnight = 2;
+Q.next_election_time = 10;
 // FAI affairs timers
 Q.defcom_timer = 0;
 Q.fai_ties.timer = 0;
