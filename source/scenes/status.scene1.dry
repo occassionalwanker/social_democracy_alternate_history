@@ -36,7 +36,7 @@ National Committee Sympathies: [? if natcom_reformist = 1 : Reformist?]; [? if n
 
 President: [+ president +]
 
-Prime Minister: [+ chancellor +] ([+ chancellor_party +])
+Prime Minister: [+ pm +] ([+ pm_party +])
 
 President of the Generalitat of Catalonia: [+ president_catalonia +]
 
@@ -68,8 +68,6 @@ Others: [+ other_r +]%
 # 1931: 0, 1933: 0,1
 [? if fet >0 {!<span class="tooltip-text" title="Fallange Espanola">FET</span>!}: [+ fet_r +]%
 
-
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: [+ next_election_forthnight : next_election_month : month +] [+ next_election_year +]
 
