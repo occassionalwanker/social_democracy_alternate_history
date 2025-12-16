@@ -1,0 +1,32 @@
+title: Aftermath of the Birth of Republic
+subtitle: How shall we react to the unfolding events?
+view-if: year = 1931 and month = 4 and fortnight = 2
+on-arrival: president_catalonia == "Macia"
+new-page: true
+max-visits: 1
+face-image: img/portraits/SchleicherKurt.jpg
+tags: event
+
+  The Catalan Republican Left has decided to fold after lengthy negotiations with the other Republican parties and promises of autonomy, also extended to the Basque and Galician minorities and their parties.
+  The proclamation of the Second Spanish Republic is big news for us and all of Spain. We have played our part in the Dictatorship's fall and on occasions we have had our moments of solidarity and cooperation with other republican forces. For that reason, several representatives and voices in the editor's committee of Solidaridad Obrera, led by Joan Peiro, have proposed we express our enthusiasm of the Republican triumph and our hopes for fruitfull partnership with our Republican allies. Many representatives in the National Committee from the reformist and unionist wings support Peiro's proposal.
+  
+  On the other hand, the anarchist firebrands who were recently freed after the amnesty and some of whom have returned from exile, will not hesitate to oppose the Republic and denounce it as a bourgoise oppressor. Their fiery rhetoric will surely sway the more radical members of the union and maybe Sr. Peiro's proposal wouldn't, strictly speaking, represent the vast majority of the workers in the union.
+
+  What course of action does the editorial committee take? Do we share in the popular celebrations? Or do we denounce the newborn state as a defender of capitalist exploters and yet another vessel of reaction?
+  
+- @enjoy
+- @denounce
+
+@enjoy
+title: Viva la Republica!
+subtitle: We will share the people's enthusiasm.
+on-arrival: reformist_strength += 5; unionist_strength += 5; revolutionary_dissent += 5; esq_relation += 5; ar_relation += 5; workers_cnt += 3*(1-dissent); middle_cnt += 3*(1-dissent);
+  
+Celebrating the Republic's birth will not only increase our popularity among some popular circles, it will also strengthen our bbonds with some of our allies, notably the republicans and the Catalan Left.
+  
+@denounce
+title: Viva la Anarquia!
+subtitle: We will share denounce these false liberators.
+on-arrival: revolutioanry_strength += 5; reformist_dissent += 5; psoe_relation += 5; workers_cnt += 2*(1-dissent); middle_cnt -= 2*(1-dissent);
+  
+The Second Spanish Republic is yet another false idol that will ultimately fail to save mankind from exploitation and oppression. We should keep cool while the people are celebrating and while we express our own enthusiasm at the King's flight, we can also forewarn that the Republic's reign doesn't mean the beginning of social harmony, as even some members of the CNT naively believe. 
