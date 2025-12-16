@@ -102,6 +102,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Catalan League">LC</span>!}: [+ lc_relation : relationships +]
 
+{!<span class="tooltip-text" title="Communist Party of Spain">PCE</span>!}: [+ pce_relation : relationships +]
+
 = Internal Factions of the CNT
 
 {!<span class="tooltip-text" title="The Reformists view the union as an independent, autonomous body that shouldn't serve a political ideology, but should only strive to fight for the interests of its members, even if allied with a friendly state.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
