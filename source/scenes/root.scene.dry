@@ -162,6 +162,7 @@ Q.cnt_catalonia = 0;
 // Options: esq, lc
 Q.catlonia_government = "esq";
 
+
 // The array of forces - paramilitary groups
 // Number of members in 1931 (in thousands)
 // Reichsbanner, stahlhelm, SA, rotfrontkämpferbund
@@ -367,6 +368,8 @@ Q.party_support_records = [];
 // inflation and unemployment records
 Q.economic_records = [];
 
+//State of Catalonia
+Q.president_catalonia = "integrated"
 
 // State of the government
 Q.president = "Alcala-Zamora";
