@@ -77,8 +77,8 @@ on-arrival: resources -= 1; esq_relation += 7*(1-dissent);
 
 Although the Esquerra is staunchly republican and thus statist, that doesn't mean that they can't be persuaded to cooperate with us, to a certain extent.
 
-@spd_alone
+@cnt_alone
 
-Whether it is because we *cannot* or *will not*, we do not make ties with other parties at this moment.
+Whether it is because we *cannot* or *will not*, we do not make ties with the political parties at this moment.
 
 - @return: Continue...
