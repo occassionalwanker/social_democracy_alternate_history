@@ -377,10 +377,11 @@ Q.prrs_in_government = 0;
 Q.prr_in_government = 0;
 Q.ep_in_government = 0;
 Q.bp_in_government = 0;
-Q.esc_in_government = 0;
+Q.esq_in_government = 0;
 Q.ar_in_government = 0;
 Q.ap_in_government = 0;
 Q.lc_in_government = 0;
+Q.ir_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -525,7 +526,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'high_inflation', 'banking_crisis', 'march_on_berlin',
             'understanding_enemy', 'schleichers_schemes'];
 Q.advisor_action_timer = 0;
-// party affairs timers
+// Union affairs timers
 Q.confronting_fascists_timer = 0;
 Q.econ_program_timer = 0;
 Q.fundraising_timer = 0;
@@ -538,9 +539,10 @@ Q.enemies_timer = 0;
 Q.party_organizations_timer =  0;
 Q.rally_timer = 0;
 Q.revolution_timer = 0;
-Q.defcom_timer = 0;
 Q.shuffle_leadership_timer = 0;
 Q.streetfighting_timer = 0;
+Q.education.timer = 0;
+Q.agri_situation = 0;
 // n_elections is the number of elections that have happened since the start of the game.
 Q.n_elections = 0;
 // number of elections without a clear majority.
@@ -548,9 +550,12 @@ Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
 Q.next_election_year = 1931;
-Q.next_election_month = 5;
+Q.next_election_month = 4;
+Q.next_election_fortnight = 1;
 Q.next_election_time = 5;
-// government affairs timers
+// FAI affairs timers
+Q.defcom_timer = 0;
+Q.fai_ties.timer = 0;
 Q.agricultural_policy_timer = 0;
 Q.domestic_enemies_timer = 0;
 Q.economic_policy_timer = 0;
@@ -569,6 +574,9 @@ Q.homosexual_rights_timer = 0;
 Q.economic_democracy_timer = 0;
 Q.coalition_affairs_timer = 0;
 // event timers
+
+
+
 Q.emergency_cuts_timer = 0;
 Q.unemployment_insurance_timer = 0;
 Q.sa_ban_timer = 0;
