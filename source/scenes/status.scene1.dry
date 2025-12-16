@@ -45,26 +45,28 @@ Cortes composition:
 # 1931: 24,44, 1933: 25, 1936: 22
 {!<span class="tooltip-text" title="Socialist Worker's Party of Spain">PSOE</span>!}: [+ psoe_r +]%
 # 1931: 19,15, 1933: 15, 1932: 
-{!<span class="tooltip-text" title="Radical Republican Party">PRR</span>!}: [+ prr +]%
+{!<span class="tooltip-text" title="Radical Republican Party">PRR</span>!}: [+ prr_r +]%
 # 1931: 12,98, 1933: 13
-{!<span class="tooltip-text" title="Radical Republican Socialist Party">PRRS</span>!}: [+ prrs +]%
+{!<span class="tooltip-text" title="Radical Republican Socialist Party">PRRS</span>!}: [+ prrs_r +]%
 # 1931: 6,17, 1933: 4 (as DstP)
-{!<span class="tooltip-text" title="Republican Left of Catalonia">>ESC</span>!}: [+ esq +]%
+{!<span class="tooltip-text" title="Republican Left of Catalonia">>ESC</span>!}: [+ esq_r +]%
 # 1931: 5,55, 1933: 5
-{!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ar +]%
+{!<span class="tooltip-text" title="Action Republicana">!}[? if not ar_name: AR?][? if ar_name != 0 : [+ ar_name +]?]{!</span>!}: [+ ar_r +]%
 [? if ir_formed > 0: IR: [+ ir_r +]% ?]
 # 1931: 5,32, 1933: 7
-{!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr +]%
+{!<span class="tooltip-text" title="Liberal Republican Right">DLR</span>!}: [+ dlr_r +]%
 # 1931: 3, 1933: 5
-{!<span class="tooltip-text" title="Action Popular">!}[? if not ar_name: AP?][? if ap_name != 0 : [+ ap_name +]?]{!</span>!}: [+ ceda +]%
+{!<span class="tooltip-text" title="Action Popular">!}[? if not ar_name: AP?][? if ap_name != 0 : [+ ap_name +]?]{!</span>!}: [+ ceda_r +]%
 # 1931: 7,15, 1933: 18
-{!<span class="tooltip-text" title="Ethnic Parties">EP</span>!}: [+ ep +]%
+{!<span class="tooltip-text" title="Ethnic Parties">EP</span>!}: [+ ep_r +]%
 # 1931: 2,2, 1933: 18
-{!<span class="tooltip-text" title="Catalan League">LC</span>!}: [+ lc +]%
+{!<span class="tooltip-text" title="Catalan League">LC</span>!}: [+ lc_r +]%
 # 1931: 14, 1933: 10
 Others: [+ other_r +]%
+# 1931: 0,5, 1933: 5
+{!<span class="tooltip-text" title="Communist Party of Spain">PCE</span>!}: [+ pce_r +]%
 # 1931: 0, 1933: 0,1
-[? if fet >0 {!<span class="tooltip-text" title="Fallange Espanola">FET</span>!}: [+ fet +]%
+[? if fet >0 {!<span class="tooltip-text" title="Fallange Espanola">FET</span>!}: [+ fet_r +]%
 
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
