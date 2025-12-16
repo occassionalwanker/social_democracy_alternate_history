@@ -119,8 +119,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-if (Q.jdc_strength) {
-    Q.jdc_strength_2 = Q.jdc_strength.toFixed(1);
+if (Q.cnt_strength) {
+    Q.cnt_strength_2 = Q.cnt_strength.toFixed(1);
 }
 if (Q.jse_strength) {
     Q.jse_strength_2 = Q.rfb_strength.toFixed(1);
@@ -135,9 +135,9 @@ if (Q.jsu_strength) {
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Joint Defense Committees are the loosely organized groups, created after the Alliance betwen CNT and FAI for the collective defense of the organizations.">Defense Committees</span>!} Strength: [+ jdc_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Joint Defense Committees are the loosely organized groups, created after the Alliance betwen CNT and FAI for the collective defense of the organizations.">Defense Committees</span>!} Strength: [+ cnt_strength_2 +] thousand
 
-Joint Defence Committee Preparedness: [+ jdc_militancy : militancy +]
+Joint Defence Committee Preparedness: [+ cnt_militancy : militancy +]
 
 {!<span class="tooltip-text" title="The Spanish Socialist Youth (Juventudes Socialista del Espana) is the youth wing of the Workers' Socialist Party of Spain.">JSE</span>!} Strength: [+ jse_strength_2 +] thousand
 
