@@ -1,0 +1,34 @@
+title: The 1 May Conference
+subtitle: The CNT and FAI convene together
+view-if: year = 1931 and month = 5 and forthnight = 1
+max-visits: 1
+tags: event
+new-page: true
+
+= The 1 May Conference
+
+# reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
+
+On the 1 May delegates from the FAI and representative of the CNT convened together in Barcelona's Palace of Fine Arts. As the signers of the trabazon of old met again the anarchists in our midsts, supported by the FAI delegates, demanded we jointly issue a declaration the shows the wants of the working class - the cession of the factories to workers and land to the peasants, the dissolutuon of the Guardia Civil and the use of those funds, sent to the religious orders and institutions for the construction of public works that benefit the people.
+Under the shadow of those radical demands and with a renewed revolutionary spirit the workers then proceeded to make a demonstration on the streets of Barcelona. What shall we advise our fellow members?
+  
+- @peaceful: Urge for peaceful demonstration.
+- @radical: Let Barcelona see the united CNT and FAI!
+
+@peaceful:
+subtitle: We are not ready to threaten the Republic yet. 
+on-arrival: reformist_strength += 5; 
+go-to: aftermath
+
+Ludwig Kaas has been selected as the chairman of the Center Party. He seems to represent a rightward turn from Marx, and will preside over a Center Party less inclined to compromise with the left.
+
+@joos
+unavailable-subtitle: Our relations are not good enough.
+subtitle: Joos is likely to be friendlier to us than Kaas.
+choose-if: z_relation >= 70
+on-arrival: z_party_leader = "Joos"; catholics_spd += 5; workers_z += 3
+
+With our grassroots connections, we have been able to influence the Center delegates to support Joseph Joos as the new Center chairman. He has long been a friend of the SPD, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the Center Party to the working class.
+
+  @aftermath
+  
