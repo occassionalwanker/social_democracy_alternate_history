@@ -43,9 +43,9 @@ subtitle: -1 resources
 view-if: ir_formed > 0
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ir_relation += 8*(1-dissent); 
+on-arrival: resources -= 1; ir_relation += 8*(1-dissent)
 
-Both us and the Izquierda Republicana have had enough of the right-wing's disastrous policies. Now is the time to negotiate common actions together.
+The Popular Front and the Izquierda Republicana have had enough of the right-wing's disastrous policies. Now is the time to negotiate common actions together.
 
 - @left
 subtitle: -1 resources
@@ -67,16 +67,15 @@ With Indalecio Prieto as a party leader, the Partido Obrero Socialista and the U
 @psoe_mid
 on-arrival: resources -= 1; psoe_relation += 7*(1-dissent); pce_relation += 6*(1-dissent)
 
-The Partido Obrero Socialista
+The factions in the Partido Obrero Socialista are still struggling to achieve superiority, as the Socialist Youth supports the left radicals and the Party Committee is full of moderates. For now that means the they are somewhat receptive to advances from us, though not very useful as an ally.
 
 @catalan
 subtitle: -1 resources
-view-if: ir_formed > 0
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ir_relation += 8*(1-dissent); 
+on-arrival: resources -= 1; esq_relation += 7*(1-dissent); 
 
-Both us and the Izquierda Republicana have had enough of the right-wing's disastrous policies. Now is the time to negotiate common actions together.
+Although the Esquerra is staunchly republican and thus statist, that doesn't mean that they can't be persuaded to cooperate with us, to a certain extent.
 
 @spd_alone
 
