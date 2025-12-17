@@ -1,15 +1,15 @@
-title: The 1 May Conference
+title: The May 1st Conference
 subtitle: The CNT and FAI convene together
 view-if: year = 1931 and month = 5 and forthnight = 1
 max-visits: 1
 tags: event
 new-page: true
 
-= The 1 May Conference
+= The May 1st Conference
 
 # reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
 
-On the 1 May delegates from the FAI and representative of the CNT convened together in Barcelona's Palace of Fine Arts. As the signers of the trabazon of old met again the anarchists in our midsts, supported by the FAI delegates, demanded we jointly issue a declaration the shows the wants of the working class - the cession of the factories to workers and land to the peasants, the dissolutuon of the Guardia Civil and the use of those funds, sent to the religious orders and institutions for the construction of public works that benefit the people.
+On  May  1st delegates from the FAI and representative of the CNT convened together in Barcelona's Palace of Fine Arts. As the signers of the trabazon of old met again the anarchists in our midsts, supported by the FAI delegates, demanded we jointly issue a declaration the shows the wants of the working class - the cession of the factories to workers and land to the peasants, the dissolutuon of the Guardia Civil and the use of those funds, sent to the religious orders and institutions for the construction of public works that benefit the people.
 Under the shadow of those radical demands and with a renewed revolutionary spirit the workers then proceeded to make a demonstration on the streets of Barcelona. What shall we advise our fellow members?
   
 - @peaceful: Urge for peaceful demonstration.
@@ -17,18 +17,23 @@ Under the shadow of those radical demands and with a renewed revolutionary spiri
 
 @peaceful:
 subtitle: We are not ready to threaten the Republic yet. 
-on-arrival: reformist_strength += 5; 
+on-arrival: reformist_strength += 5; radicalization -= 1;
 go-to: aftermath
 
-Ludwig Kaas has been selected as the chairman of the Center Party. He seems to represent a rightward turn from Marx, and will preside over a Center Party less inclined to compromise with the left.
+We urge our member not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
 
-@joos
-unavailable-subtitle: Our relations are not good enough.
-subtitle: Joos is likely to be friendlier to us than Kaas.
-choose-if: z_relation >= 70
-on-arrival: z_party_leader = "Joos"; catholics_spd += 5; workers_z += 3
+@radical
+subtitle: Let the demonstration proceed naturally.
+on-arrival: revolutionary_strength += 5; radicalization -= 1; reformist_dissent += 5;
+go-to: aftermath
 
-With our grassroots connections, we have been able to influence the Center delegates to support Joseph Joos as the new Center chairman. He has long been a friend of the SPD, and will be more inclined to collaborate with us compared to Kaas. He also increases the appeal of the Center Party to the working class.
+Let the people do as they will. If things turn ugly, we'll stand together with our comrades of the FAI.
 
-  @aftermath
+@aftermath
+on-arrival: militarization += 0.1
+
+During the demonstration, the Civil Guards shot on workers from the FAI trying to deliver their demands at the Generalitat Palace, killing one protester and wounding fifteen more. Armed anarchists returned fire and two Guards were shot dead. 
+The incident has shown that even under the Republican control the Civil Guard are still hostile to our union. The realisation has radicalised some of our members.
+
+
   
