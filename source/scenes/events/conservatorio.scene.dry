@@ -1,0 +1,42 @@
+title: The Conservatorio Congress
+subtitle: The stakes in the CNT are high
+view-if: year = 1931 and month = 6 and forthnight = 1
+max-visits: 1
+tags: event
+new-page: true
+
+= The Coservatorio Congress
+
+# reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
+
+On  June  11th the delegates of the CNT convened to resolve the big questions dividing the union. The congress is split in two sides, with some exceptions.
+On one hand, there are the delegates around Angel Pestana (reformists) and Joan Peiro (unionists), who are, more or less, supportive of the Republic and more friendly to the leftist parties in the upcoming Constituent Cortes. The leading face of these delegates are, like Sr. Peiro, members of the National Committee. Sr. Pestana himself is the Chairman of the Committee. The editorial committee of the union's main newspaper in Barcelon, Solidaridad Obrera, is also full of their sympathisers
+On the other hand are the more militant faistas and especially the people arounf the Nosotros group (Buenaventura Durruti, Francisco Ascaso and Juan Garcia Oliver), as well of the more dogmatic anarchists, like Sr. Abad de Santillan. Being inspired by the struggles of their exile revolutionaries, these delegates are more radical in their demands and their actions. They oppose any collaboration with the state and support revolutionary actions. They are still a loud minority, but are fastly gaining popularity among the union members with in their rhetoric.
+
+  
+delegates from the FAI and representative of the CNT convened together in Barcelona's Palace of Fine Arts. As the signers of the trabazon of old met again the anarchists in our midsts, supported by the FAI delegates, demanded we jointly issue a declaration the shows the wants of the working class - the cession of the factories to workers and land to the peasants, the dissolutuon of the Guardia Civil and the use of those funds, sent to the religious orders and institutions for the construction of public works that benefit the people.
+Under the shadow of those radical demands and with a renewed revolutionary spirit the workers then proceeded to make a demonstration on the streets of Barcelona. What shall we advise our fellow members?
+  
+- @peaceful: Urge for peaceful demonstration.
+- @radical: Let Barcelona see the united CNT and FAI!
+
+@peaceful:
+subtitle: We are not ready to threaten the Republic yet. 
+on-arrival: reformist_strength += 5; radicalization -= 1;
+go-to: aftermath
+
+We urge our members not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
+
+@radical
+subtitle: Let the demonstration proceed naturally.
+on-arrival: revolutionary_strength += 5; radicalization -= 1; reformist_dissent += 5; fai_ties += 1
+go-to: aftermath
+
+Let the people do as they will. If things turn ugly, we'll stand together with our comrades of the FAI.
+
+@aftermath
+on-arrival: militarization += 0.1
+
+During the demonstration, the Civil Guards shot on workers from the FAI trying to deliver their demands at the Generalitat Palace, killing one protester and wounding fifteen more. Armed anarchists returned fire and two Guards were shot dead. 
+The incident has shown that even under the Republican control the Civil Guard are still hostile to our union. The realisation has radicalised some of our members.
+
