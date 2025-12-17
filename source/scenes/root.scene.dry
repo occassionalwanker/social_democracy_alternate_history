@@ -96,6 +96,9 @@ Q.government_participation_support = 0;
 Q.agri_revolt = 0;
 Q.agri_union = 0;
 Q.agri_none = 0;
+//Congress of 1931 points
+Q.reform_points += 0;
+Q.revolut_points += 0;
 
 
 // support for centralist plan
