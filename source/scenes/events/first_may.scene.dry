@@ -20,7 +20,7 @@ subtitle: We are not ready to threaten the Republic yet.
 on-arrival: reformist_strength += 5; radicalization -= 1;
 go-to: aftermath
 
-We urge our member not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
+We urge our members not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
 
 @radical
 subtitle: Let the demonstration proceed naturally.
