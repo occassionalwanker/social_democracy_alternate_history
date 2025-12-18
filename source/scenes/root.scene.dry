@@ -199,6 +199,7 @@ Q.army_loyalty = 0.2;
 
 // popular opinion
 Q.cnt_attraction = 0;
+Q.rural_influence =0;
 // national ideology - on a binary scale
 // Nationalism vs. Internationalism
 Q.nationalism = 30;
