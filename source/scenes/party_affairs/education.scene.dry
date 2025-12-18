@@ -7,7 +7,18 @@ card-image: img/flags.jpg
 frequency: 100
 tags: party_affairs
 
-= Edcuation
+
+
+
+
+
+
+
+
+
+
+
+= Education
 
 Whether or not we are revolutionaries, the education of the the people is essential for their emancipation. Whom shall we focus on?
 
@@ -23,7 +34,7 @@ Whether or not we are revolutionaries, the education of the the people is essent
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: workers_cnt += 10; workers_cnt += 3 if centralist_adopted = 1; workers_cnt -= 2 if moderate_plan_adopted = 1; workers_cnt += 6*(1-dissent) if unemployed >= 15; resources -= 1; workers_cnt += 2 if decentralist_adopted = 1;
+on-arrival: anarchism += 4; anarchism  += 3 if centralist_adopted = 1; anarchism  += 2 if moderate_plan_adopted = 1; resources -= 1; anarchism  += 5 if decentralist_adopted = 1;
 
 We have increased our efforts to educate among the workers. [? if unemployed >= 15: The high levels of unemployment make our campaign more successfull. ?][? if centralist_adopted == 1 : Adopting the Centralized plan gives us a new rallying point around which to attract workers. ?][? if decentralist_adopted == 1 : Adopting the Decentralized plan gives us a boost to the efforts to the union. ?]
 [? if moderate_plan_adopted == 1 : Adopting the Moderate plan antagonizes the more radical workers. ?]
@@ -33,7 +44,7 @@ We have increased our efforts to educate among the workers. [? if unemployed >= 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: middle_cnt += 3*(1-dissent)  if reformist == 1; middle_cnt -= 4 if anarchism >= 49 and reformist_left == 1; resources -= 1; middle_cnt += 2 if reformist_strength >=59; 
+on-arrival: anarchism += 2  if reformist == 1; anarchism -= 4 if reformist_left == 1; resources -= 1; nationalism -= 3 if reformist_strength >=59; 
 
 We have increased our efforts to educate the middle class, but it will be hard. [? if anarchism <= 49 and reformist_left == 1: The middle class' antipathy towards anarchism makes our efforts more difficult. ?] [? if reformist_strength >=59: As we are not a threat tot hem, we witness an increase in reception among the middle class for our education fforts. ?]
 
@@ -41,7 +52,7 @@ We have increased our efforts to educate the middle class, but it will be hard. 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: ruralmiddle_cnt += 3*(1-dissent); resources -= 1; ruralmiddle_cnt -= 3 if nationalism >= 51 and expropriation == 1 and anarchism =< 35; ruralmiddle_cnt += 6*(1-dissent) if expropriation == 0 and if reformist_strength >=59; reformist_strength += 10;
+on-arrival: anarchism += 1; resources -= 1; anarchism -= 3 if nationalism >= 51 and expropriation == 1 and anarchism =< 35; ruralmiddle_cnt += 6*(1-dissent) if expropriation == 0 and if reformist_strength >=59; reformist_strength += 10;
 
 We have tried to appeal to the rural middle class. [? if nationalism >= 51 and expropriation == 1: Our direct action against the rural owners make our efforts extremely difficult. ?] [? if expropriation == 0: As we pose no threat to the status quo, we have an easier time increasing support among the rural middle class than before. ?]
 
@@ -49,7 +60,7 @@ We have tried to appeal to the rural middle class. [? if nationalism >= 51 and e
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: rural_cnt += 5*(1-dissent); rural_cnt -= 3*(1-dissent) if expropriation == 0 and if reformist_strength >=59; resources -= 1; rural_cnt += 2 if decentralist_adopted = 1; rural_cnt += 6*(1-dissent) if expropriation == 1;
+on-arrival: anarchism += 3; anarchism -= 3 if expropriation == 0; resources -= 1; anarchism += 4 if decentralist_adopted = 1; anarchism += 5 if expropriation == 1; nationalism -= 1; revolutionary
 
 We have increased our education efforts among the landless rural workers. [? if expropriation == 0 and if reformist_strength >=59: Since we have moderated our rhetoric and abandoned illegalist action, the rural workers no longer trust us. ?][? if expropriation == 1: As we support their fight for land and freedom, the rural communities are more receptive to our education efforts. ?]
 
@@ -57,7 +68,7 @@ We have increased our education efforts among the landless rural workers. [? if 
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: catholic_cnt += 2*(1-dissent); catholic_cnt -= 6*(1-dissent) if revolutionary_strength >= 39; resources -= 1; catholic_cnt += 6*(1-dissent) if reformist_strength >=59;; resources -= 1 
+on-arrival: anarchism += 1; anarchism -= 5 and nationalism += 5 if expropration >= 1; resources -= 1; anarchism += 2 if reformist_strength >=59;; resources -= 1; reformist_strength += 5; 
 
 We have tried to reeducate the devout catholics. [? if revolutionary_strength >= 39: The catholics despise our athiest and anti-establishment ideas. ?][? if reformist_strength >=59: Our more moderate views make us more amenable to the catholics in Spain. ?]
 
