@@ -57,22 +57,22 @@ What shall we rally about? Which aspect of our struggle deserves the most attent
 @violence
 choose-if: ins_support >= 4;
 unavailable-subtitle: We are not ready for a violent riot yet and the situation does not demand it.
-on-arrival: political_urgency += 1; workers_cnt += 3*(1-dissent); workers_cnt += 5*(1-dissent) if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 5; ir_relation -= 5;  esc_relation -= 5; revolutionary_strength += 5; revolutionary_dissent -= 5; middle_cnt -= 3; middle_rural_cnt -= 2; 
+on-arrival: political_urgency += 1; anarchism += 1; cnt_millitancy += 0.1 if revolutionary_strength >= 50; if psoe_in_government == 1, psoe_relation -= 5; ir_relation -= 5;  esc_relation -= 5; revolutionary_strength += 5; revolutionary_dissent -= 5; nationalism += 3; if psoe_in_government == 1, socialism += 3;
 
 Peaceful protesting won't get us very far, we are ready and we know we need to fight for our rights. If the bosses and politicans won't listen to us, we will make them fear us!  [? revolutionary_strength >= 50 : Our revolutionary rhetoric matches our radical actions. ?]
 
 @classwar
 choose-if: unionist_strength <= 40;
 unavailable-subtitle: The class struggle will be resolved in the right time, we are not ready yet.
-on-arrival: workers_cnt += 3*(1-dissent); workers_cnt += 6*(1-dissent) if anarchism >= 50; workers_cnt += 4*(1-dissent) if socialism >= 50; radicalization += 1; if psoe_in_government == 1, psoe_relation += 5; if psoe_in_government == 0, psoe_relation += 10;
+on-arrival: anarchism += 2; workers_cnt += 3 if socialism >= 50; anarchism -= 4 if nationalism >= 50; radicalization += 1; if psoe_in_government == 1, psoe_relation += 5; if psoe_in_government == 0, psoe_relation += 10;
 
-Workers resonate with our radical rhetoric of class war and workers's unity. [? if anarchism > 50 : The mass appeal of anarchist ideas makes the working class more receptive to our message. ?]  [? if socialism > 50 : The mass appeal of socialst ideas makes the working class somewhat more receptive to our message. ?] 
+Workers resonate with our radical rhetoric of class war and workers's unity. [? if anarchism > 50 : The mass appeal of socialist ideas makes the working class more receptive to our message. ?]  [? if nationalism > 50 : The mass appeal of nationalist ideas makes the people somewhat hate us more. ?] 
 
 @antifa
 choose-if: popular_front >= 0 and fascist_urgency >= 3;
 view-if: nationalism >= 60;
 unavailable-subtitle: As troubling as the rightist rising is, there are more important battles ahead of us.
-on-arrival: workers_cnt += 3*(1-dissent); psoe_relation += 5; ir_relation += 5; esc_relation += 5; fascist_urgency += 2; cnt_millitancy += 0.2; radicalization += 1; fai_ties += 1; catholic_cnt -= 4;
+on-arrival: anarchism += 1; psoe_relation += 5; ir_relation += 5; esc_relation += 5; fascist_urgency += 2; cnt_millitancy += 0.2; radicalization += 1; fai_ties += 1; bs_millitancy += 0.1;
 
 We have learned from the German and Italian expereience and we know that only the united strength of the working class will not let them pass!
 
@@ -80,7 +80,7 @@ We have learned from the German and Italian expereience and we know that only th
 choose-if: reformist_strength >= 45;
 view-if: popular_front >= 0;
 unavailable-subtitle: Why would we support those who persecute us and put us in the same jail as the reactionaries themselves would?
-on-arrival: workers_cnt += 3*(1-dissent); psoe_relation += 10; ir_relation += 5; esc_relation += 10; cpe_relation += 10; fascist_urgency += 1; cnt_millitancy += 0.1;  middle_cnt += 3 if reformist_plan == 1; rural_middle_cnt += 2*(1-dissent); 
+on-arrival: socialism += 1; psoe_relation += 5; ir_relation += 5; esc_relation += 10; cpe_relation += 5; fascist_urgency += 1; cnt_millitancy += 0.1;  psoe_relation += 10 if reformist_plan == 1; fascist_urgency += 1; 
 
 To successfully defend the working class, we must fight with those who would be receptive and amiable to their plight, even if we have to fight to save the Republic!
 
@@ -88,12 +88,12 @@ To successfully defend the working class, we must fight with those who would be 
 view-if: radical_wing == 1 and psoe_relation >= 69.9
 choose-if: strike >= 1;
 unavailable-subtitle: There is no strike right now.
-on-arrival: radicalization += 1; workers_cnt += 6*(1-dissent); rural_cnt += 3*(1-dissent); rura_middle_spd -= 3*(1-dissent), middle_cnt -= 3*(1-dissent); political_urgency += 1;
+on-arrival: radicalization += 1; anarchism += 3; socialism += 2; cnt_millitancy += 0.2; political_urgency += 1;
 
 The UGT and the CNT shall together march as one! Let the status quo tremble when the workers stand united!
 
 
 @non-violence
-on-arrival: workers_cnt += 3*(1-dissent); rural_middle_cnt += 2*(1-dissent); middle_cnt += 1*(1-dissent); radicalization -= 1; 
+on-arrival: if revolutionary_strength >= reformist_strength, anarchism += 1;if reformist_strength >= revolutionary_strength, socialism += 1 and fai_ties -=1; radicalization -= 1; 
 
 We don't have the strength for something more than a simple small demonstration.
