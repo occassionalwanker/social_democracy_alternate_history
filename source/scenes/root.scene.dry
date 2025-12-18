@@ -66,7 +66,7 @@ Q.unionist_resign = 0;
 Q.intellectual_split = 0;
 
 // have the intelelctuals formed?
-Q.intellectual = 0;
+Q.intellectual = 1;
 
 // crisis_urgency indicates how seriously the CNT is taking the political crisis - scale from 0 to 10.
 Q.political_urgency = 2;
@@ -77,7 +77,8 @@ Q.radicalization = 1;
 // How close we are to the FAI - 1 to 10.
 Q.fai_ties = 2;
 // Support for restructuring of the union for a more disciplined framework - 1 to 10.
-Q.centralization_support = 0
+Q.centralization_support = 0;
+Q.natcom_control = 1;
 Q.expropriation = 0
 
 // Support for the insurrectionary plan
@@ -197,6 +198,7 @@ Q.army_loyalty = 0.2;
 // The state of the country
 
 // popular opinion
+Q.cnt_attraction = 0;
 // national ideology - on a binary scale
 // Nationalism vs. Internationalism
 Q.nationalism = 30;
@@ -356,14 +358,6 @@ Q.old_sapd_r = 0;
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";
 
-//Support for the CNT itself
-Q.workers_cnt = 55;
-Q.rural_cnt = 40;
-Q.rural_middle = 5;
-Q.catholics_cnt = 5;
-Q.mclass_cnt = 10;
-
-
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
 // party support records for every month
@@ -456,10 +450,8 @@ Q.womens_rights = 0;
 // level of welfare relative to 1928 (can go negative)
 Q.welfare = 0;
 // level of support for farmers
-Q.agricultural_policy = 0;
 Q.land_reform = 0;
 // works-creation programs (i.e. PW -Public works - Indalecio Prieto's public works plan) - how much have they implemented?
-Q.works_program = 0;
 Q.pw_implemented = 0;
 // Relations with the Western countries (France, UK).
 Q.west_relation = 0;
@@ -469,14 +461,10 @@ Q.east_relation = 0;
 Q.soviet_relation = 0;
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
-// reparations vs baseline: young plan is -1.
-Q.reparations = 0;
-Q.reparations_negotiation = 0;
 // nationalization_progress is part of the left economic plan.
 Q.nationalization_progress = 0;
 // socializations is part of the economic democracy card.
 Q.socializations = 0;
-Q.nationalize_budget = 4;
 // have there been any factory takeovers?
 Q.factory_takeovers = 0;
 // progress on the moderate economic plan
@@ -657,7 +645,7 @@ Q.dvp_relation = 31;
 Q.budget = 2;
 this.state.disableSaves = true;
 !}
-go-to: 1928_main
+go-to: 1931_main
 
 @1931_main
 audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
