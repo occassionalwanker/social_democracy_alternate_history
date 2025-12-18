@@ -17,7 +17,7 @@ With the rise of revolutionary rhetoric in the CNT and the closer collaboration 
 - @cancel_advisor_action
 
 @embrace
-on-arrival: feminism += 1
+on-arrival: feminism += 1; anarchism -= 5;
 
 We must all understand that the struggle for equality and against hierarchy is intrinsically connected witht he fight against patriarchy. Who, if not the women, shall fight for their rights?
 
