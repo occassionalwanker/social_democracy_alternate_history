@@ -49,14 +49,17 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['reformist', 'revolutionary', 'unionist', 'intellectual'];
 // should this be normalized to 100%?
-Q.reformist_strength = 45;
+Q.reformist_strength = 35;
 Q.reformist_dissent = 20;
 
-Q.unionist_strength = 35;
-Q.unionist_dissent = 25;
+Q.unionist_strength = 25;
+Q.unionist_dissent = 15;
 
-Q.revolutionary_strength = 25;
+Q.revolutionary_strength = 15;
 Q.revolutionary_dissent = 20;
+
+Q.intellectual_strength = 10;
+Q.intellectual_dissent =15;
 
 // secret events...
 
@@ -98,8 +101,8 @@ Q.agri_revolt = 0;
 Q.agri_union = 0;
 Q.agri_none = 0;
 //Congress of 1931 points
-Q.reform_points += 0;
-Q.revolut_points += 0;
+Q.reform_points = 0;
+Q.revolut_points = 0;
 
 
 // support for centralist plan
