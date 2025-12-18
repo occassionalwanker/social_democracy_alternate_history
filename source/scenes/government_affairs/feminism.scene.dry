@@ -23,6 +23,6 @@ We must all understand that the struggle for equality and against hierarchy is i
 
 
 @embrace
-on-arrival: feminism == -1
+on-arrival: cnt_attraction += 2; rural_influence += 3;
 
 Their initiative is highly commendable, but the struggle that really matters is the class war. Men or women, we are all workers, after all.
