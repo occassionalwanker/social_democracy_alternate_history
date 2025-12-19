@@ -85,8 +85,8 @@ on-arrival: cnt_attraction += 2; socialism += 1; psoe_relation += 5; ir_relation
 To successfully defend the working class, we must fight with those who would be receptive and amiable to their plight, even if we have to fight to save the Republic!
 
 @ugt
-view-if: radical_wing == 1 and psoe_relation >= 69.9
-choose-if: strike >= 1;
+choose: radical_wing == 1 and psoe_relation >= 69.9
+view-if: strike >= 1;
 unavailable-subtitle: There is no strike right now.
 on-arrival: radicalization += 1; anarchism += 3; socialism += 2; cnt_millitancy += 0.2; political_urgency += 1; cnt_attraction += 5;
 
