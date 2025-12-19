@@ -1,37 +1,39 @@
-title: Businesses Lose Confidence
-subtitle: Big businesses are losing confidence in our government's policies.
-view-if: (capital_strike_progress >= 6 and capital_strike_progress < 10 and budget > -5) and spd_in_government
+title: The Telephone Workers Strike
+subtitle: The National  Telephone Union declares a strike!
+view-if: year == 1931 and month == 6 and forthnight == 1
 new-page: true
+priority: 1
 max-visits: 1
-on-arrival: unemployed += 2; new_middle_spd -= 6; old_middle_spd -= 6; rural_spd -= 5; workers_spd -= 4; unemployed_spd -= 4; dvp_relation -= 6; economic_growth -= 1
 tags: event
 
-= Businesses Lose Confidence
+= The Telephone Workers Strike
 
-Because of our government's policies, which are perceived as anti-business, the capitalists are reducing their investment and laying off workers. This has the immediate effect of raising unemployment and dissent against our government, especially among the middle class.
+The National Telephone Union has declared a strike! Since the National Telephone Company is one of the most expolitative indsutries in Spain. Its monopoly, from which its exploitative potential grows, also violates the law. The workers, part of our union and mostly women, have independently decided to stop this injustice have declared a strike!
 
-The business community has a variety of suggestions as to how we might improve the business environment.
+Since before the Republic, even the moderate Socialist leaders have vowed to reform the National Telephone Company. Right now, Senor Largo Caballero is a Minister of Labour. Most of our members say that the workers are right and now is the right time for this strike. Though some members from Cataloia argue that right now the interior issues of the CNT must take precedence over a labour dispute we can always devote our energy to resolve later.
 
-- @taxes: Cut taxes for the upper brackets.
-- @welfare: Reduce welfare and social spending.
-- @nothing: We will not take any action for now.
-- @watch: Just watch us. The economy *will* improve.
+How does the National Committee react?
 
-@taxes
-on-arrival: upper_tax_rates -= 1; budget -= 1; capital_strike_progress -= 1; unemployed -= 1; new_middle_spd += 5*(1-dissent); old_middle_spd += 4*(1-dissent); kpd_coalition_dissent += 1; kpd_relation -= 5; left_dissent += 5
+- @strike: We shall support our comrades!
+- @nostrike: This is really not the right time...
+- @aftermath_1
+- @aftermath_2
 
-Cutting taxes improves our relationship with the capitalists.
+@strike
+on-arrival: revolutionary_strength += 5; reformist_dissent += 5; psoe_relation -= 5
+go-to: @aftermath_1
 
-@welfare
-on-arrival: welfare -= 1; budget += 1; capital_strike_progress -= 2; new_middle_spd += 4*(1-dissent); old_middle_spd += 4*(1-dissent); workers_spd -= 5; unemployed_spd -= 5; unemployed -= 1; left_dissent += 5; labor_dissent += 5; center_dissent += 5; kpd_coalition_dissent += 1; inflation -= 1;
+The National Committee, though reluctant at first, bends to the mass members' pleas to support our comrades. We shall express solidarity thorugh our official newspaper and gather funds for the families of the workers on strike. A la huelga, companeros!
 
-Cutting welfare improves our relationship with the capitalists, but it hurts our working-class base.
+@nostrike
+on-arrival: revolutionary_dissent += 5; reformist_strength += 5; psoe_relation += 5.
 
+Now is REALLY not the right time for this, not only because of the important divisive issues that we are yet to decide, but also because we shouldn't destabilize the same Republic that we helped bring to existance. The National Committee shall support publicly the strikers, but not too enthusiastically and we must be sure to reprimand them in private. Later there will be plenty of time to strike...when we are ready!
 
-@nothing
+@aftermath_1
 
-Realistically, there is nothing we can do.
+Regardless of our efforts, the strike was immediately declared as an illegal one and the Guardia Civil arrived to detain the workers. Despite fierce guerrila fights, 2 000 of the 7 000 unionists were arrested. Curse the Socialist betrayal!
 
-@watch
+@aftermath_2
 
-Presumably, we have an economic plan that will lead us out of the crisis. The capitalists do not trust us, but we will show them eventually.
+Despite the workers' best efforts, the strike was immediately declared as an illegal one and the Guardia Civil arrived to detain the workers. Despite fierce guerrila fights, 2 000 of the 7 000 unionists were arrested. Such are the fruits of haste...
