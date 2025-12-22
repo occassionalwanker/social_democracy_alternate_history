@@ -1,6 +1,6 @@
 title: The Telephone Workers Strike
 subtitle: The National  Telephone Union declares a strike!
-view-if: year == 1931 and month == 6 and forthnight == 1
+view-if: year == 1931 and month == 7 and forthnight == 1
 new-page: true
 priority: 1
 max-visits: 1
@@ -12,28 +12,11 @@ The National Telephone Union has declared a strike! Since the National Telephone
 
 Since before the Republic, even the moderate Socialist leaders have vowed to reform the National Telephone Company. Right now, Senor Largo Caballero is a Minister of Labour. Most of our members say that the workers are right and now is the right time for this strike. Though some members from Cataloia argue that right now the interior issues of the CNT must take precedence over a labour dispute we can always devote our energy to resolve later.
 
-How does the National Committee react?
-
 - @strike: We shall support our comrades!
-- @nostrike: This is really not the right time...
-- @aftermath_1
-- @aftermath_2
 
 @strike
-on-arrival: revolutionary_strength += 5; reformist_dissent += 5; psoe_relation -= 5
-go-to: @aftermath_1
+on-arrival: revolutionary_strength += 5; reformist_dissent += 5; psoe_relation -= 5; strike += 1;
 
 The National Committee, though reluctant at first, bends to the mass members' pleas to support our comrades. We shall express solidarity thorugh our official newspaper and gather funds for the families of the workers on strike. A la huelga, companeros!
 
-@nostrike
-on-arrival: revolutionary_dissent += 5; reformist_strength += 5; psoe_relation += 5.
-
-Now is REALLY not the right time for this, not only because of the important divisive issues that we are yet to decide, but also because we shouldn't destabilize the same Republic that we helped bring to existance. The National Committee shall support publicly the strikers, but not too enthusiastically and we must be sure to reprimand them in private. Later there will be plenty of time to strike...when we are ready!
-
-@aftermath_1
-
 Regardless of our efforts, the strike was immediately declared as an illegal one and the Guardia Civil arrived to detain the workers. Despite fierce guerrila fights, 2 000 of the 7 000 unionists were arrested. Curse the Socialist betrayal!
-
-@aftermath_2
-
-Despite the workers' best efforts, the strike was immediately declared as an illegal one and the Guardia Civil arrived to detain the workers. Despite fierce guerrila fights, 2 000 of the 7 000 unionists were arrested. Such are the fruits of haste...
