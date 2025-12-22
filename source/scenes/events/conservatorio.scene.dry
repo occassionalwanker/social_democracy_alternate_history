@@ -4,12 +4,10 @@ view-if: year = 1931 and month = 6 and forthnight = 1
 priority: -2
 max-visits: 1
 tags: event
-on-arrival: if revolutionary_strength >= 34, revolut_points += 4; if revolutionary_strength >= 29, revolut_points += 3; if revolutionary_strength >= 24, revolut_points += 2; if revolutionary_strength >= 19, revolut_points += 1; if reformist_strength >= 54, reform_points += 4; if reformist_strength >= 49, reform_points += 3; if reformist_strength >= 44, reform_points += 2; if reformist_strength >= 39, reform_points += 1;
+on-arrival: if revolutionary_strength >= 34, revolut_points += 3; if revolutionary_strength >= 29, revolut_points += 2; if revolutionary_strength >= 24, revolut_points += 1; if reformist_strength >= 39, reform_points += 3; if reformist_strength >= 34, reform_points += 2; if reformist_strength >= 29, reform_points += 1
 new-page: true
 
 = The Coservatorio Congress
-
-# reference: Evans, Ellen L. “Adam Stegerwald and the Role of the Christian Trade Unions in the Weimar Republic.” The Catholic Historical Review 59, no. 4 (1974): 602–26.
 
 On  June  11th the delegates of the CNT convened to resolve the big questions dividing the union. The congress is split in two sides, with some exceptions.
 On one hand, there are the delegates around Angel Pestana (reformists) and Joan Peiro (unionists), who are, more or less, supportive of the Republic and more friendly to the leftist parties in the upcoming Constituent Cortes. The leading faces among these delegates are, like Sr. Peiro, members of the National Committee. Sr. Pestana himself is the Chairman of the Committee. The editorial committee of the union's main newspaper in Barcelon, Solidaridad Obrera, is also full of their sympathisers
