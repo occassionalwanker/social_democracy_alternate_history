@@ -1,14 +1,24 @@
-title: Papen's Economic Plan
-subtitle: Tax cuts for the rich
-view-if: papenomics_timer = 0 and chancellor = "Papen" and unemployed > 20
-on-arrival: old_middle_dnvp += 5; new_middle_dnvp += 3; rural_dnvp += 3; upper_tax_rates -= 1; budget -= 1; unemployed -= 2; economic_growth += 0.6; inflation += 1.2 if inflation < 0; budget -= 1
-max-visits: 1
-face-image: img/portraits/PapenFranz.jpg
-tags: event
+title: The King is Down, Long Live the Republic!
+subtitle: The last days of the monarchy
+view-if: year = 1931 and month = 4 and fortnight = 1
 new-page: true
+max-visits: 1
+face-image: img/portraits/SchleicherKurt.jpg
+tags: event
 
-= Papen's Economic Plan
+  = The King is Down, Long Live the Republic!
 
-Chancellor Franz von Papen and his "Cabinet of Barons" are pushing forward an economic plan consisting of tax cuts for the very wealthy. This plan has the potential to lead to more economic growth, especially in comparison to Brüning's austerity program, but it also enriches the upper class and does nothing directly for the needy workers and unemployed.
+  At the long anticipated local elections of 12 April the Republican parties triumphed. Mass spontaneous celebrations erupted in the whole country, thus signifying that the era of the monarchy is nearing its end. Protesters practically besieged the Royal Palace in Madrid. On the advice of his closest advisors the Bourbon dog Alfonso XIII decided to flee the country and on the 14 April he country awoke as a Republic! 
+  Wasting no time, the politicians around the king proclaimed an amnesty for those political prisoners and exiles, persecuted under the Dictatorship and the monarchy and announced that in June this year Spain will have its first free elections as a Republic for Constituent Cortes. Meanwhile a provisional government, in which the main republican forces will participate, will rule the state.
 
-- @root: The policy passes due to the emergency government; there is nothing we can do...
+  The Catalan republicans, led by the Socialists of Colonel Francesc Macia have proclaimed a "Catalan Republic". There is still some uncertainty about Catalonia's statute in light of the new events.
+
+-@interesting
+
+
+@interesting
+title: Intriguing course of events.
+subtitle: We need some time to adjust to the events.
+on-arrival: in_election += 1; next_election_month == 6; next_election_forthnight == 2; next_election_timer == 4; pm == "Alcala-Zamora"; pm_party == "DLR"; president == "none"; 
+
+We shall soon have to decide how to react to these new circumstances. Meanwhile, let us welcome our imprisoned and exiled comrades with open arms back into the fold!
