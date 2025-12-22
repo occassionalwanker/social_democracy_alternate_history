@@ -1,0 +1,23 @@
+title: King and General
+subtitle: The dictatorship is dying
+view-if: year = 1931 and month = 2 and fortnight = 2
+new-page: true
+max-visits: 1
+face-image: img/portraits/SchleicherKurt.jpg
+tags: event
+
+  = King and General
+
+  King Alfonso XIII has accepted General Damaso Berenguer's resignation as a national caudillo. He has been replaced by Admiral Arnaz-Cabanas, who was given the task of supervising the free elections for local municipalities. 
+  The resignation of Primo de Rivera's successor sparked some celebrations and is seems that the people's hatred targets the King more than the General. The fate of the monarchy will be decided on the April elections where the Republican and Monarchist parties will clash, if no common ground can be found.
+  
+
+-@interesting
+
+
+@interesting
+title: Intriguing course of events.
+subtitle: We need some time to adjust to the events.
+on-arrival: pm == "Arnaz-Cabanas"; pm_party == "Other"; president == "The King; 
+
+Admiral or general, the system of violence and exploitation will stay. And yet, the events may provide an interesting opoturnities for our union.
