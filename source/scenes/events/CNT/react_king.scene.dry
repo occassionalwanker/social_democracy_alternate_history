@@ -20,13 +20,13 @@ tags: event
 @enjoy
 title: Viva la Republica!
 subtitle: We will share the people's enthusiasm.
-on-arrival: reformist_strength += 5; unionist_strength += 5; revolutionary_dissent += 5; esq_relation += 5; ar_relation += 5; cnt_attraction += 2; cnt_attraction += 2; rural_influence += 1;
+on-arrival: reform_points += 1; unionist_strength += 5; revolutionary_dissent += 5; esq_relation += 5; ar_relation += 5; cnt_attraction += 2; cnt_attraction += 2; rural_influence += 1;
   
 Celebrating the Republic's birth will not only increase our popularity among some popular circles, it will also strengthen our bonds with some of our allies, notably the republicans and the Catalan Left. After all, hasn't the CNT always acted like the midwife of the new Republic and in opposition to royalist reaction?
   
 @denounce
 title: Viva la Anarquia!
 subtitle: We will share denounce these false liberators.
-on-arrival: revolutionary_strength += 5; reformist_dissent += 5; psoe_relation += 5; cnt_attraction -= 2; anarchism -= 2;
+on-arrival: revolut_points += 1; reformist_dissent += 5; psoe_relation += 5; cnt_attraction -= 2; anarchism -= 2;
   
 The Second Spanish Republic is yet another false idol that will ultimately fail to save mankind from exploitation and oppression. We should keep cool while the people are celebrating and while we express our own enthusiasm at the King's flight, we can also forewarn that the Republic's reign doesn't mean the beginning of social harmony, as even some members of the CNT naively believe. 
