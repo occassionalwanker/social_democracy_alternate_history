@@ -15,7 +15,7 @@ Since before the Republic, even the moderate Socialist leaders have vowed to ref
 - @strike: We shall support our comrades!
 
 @strike
-on-arrival: esq_relation -=5; psoe_relation -= 5; strike += 1;
+on-arrival: esq_relation -= 5; psoe_relation -= 5; strike += 1;
 
 The National Committee, though reluctant at first, bends to the mass members' pleas to support our comrades. We shall express solidarity thorugh our official newspaper and gather funds for the families of the workers on strike. A la huelga, companeros!
 
