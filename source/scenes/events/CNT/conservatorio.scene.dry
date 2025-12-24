@@ -8,32 +8,41 @@ new-page: true
 
 = The Coservatorio Congress
 
-On  June  11th the delegates of the CNT convened to resolve the big questions dividing the union. The congress is split in two sides, with some exceptions.
+On  June  11th the delegates of the CNT convened to resolve the big issues dividing the union. The congress is split in two sides, with some exceptions, following the split along the lines of reformist unionists and anarchists.
 On one hand, there are the delegates around Angel Pestana (reformists) and Joan Peiro (unionists), who are, more or less, supportive of the Republic and more friendly to the leftist parties in the upcoming Constituent Cortes. The leading faces among these delegates are, like Sr. Peiro, members of the National Committee. Sr. Pestana himself is the Chairman of the Committee. The editorial committee of the union's main newspaper in Barcelon, Solidaridad Obrera, is also full of their sympathisers
-On the other hand are the more militant faistas and especially the people arounf the Nosotros group (Buenaventura Durruti, Francisco Ascaso and Juan Garcia Oliver), as well of the more dogmatic anarchists, like Sr. Abad de Santillan. Being inspired by the struggles of their exile revolutionaries, these delegates are more radical in their demands and their actions. They oppose any tollerance of the state and support revolutionary actions. They are still a loud minority, but are fastly gaining popularity among the union members with in their rhetoric.
+On the other hand are the more militant FAIstas and especially the people around the Nosotros group (Buenaventura Durruti, Francisco Ascaso and Juan Garcia Oliver), as well of the more dogmatic anarchist intellectuals, like Diego Abad de Santillan. Being inspired by the struggles of their exile revolutionaries, these delegates are more radical in their demands and their actions. They oppose any tollerance of the state and support revolutionary actions. They are still a loud minority, but are fastly gaining popularity among the union members with in their rhetoric.
 
-The first point on the agenda of the Congress is 
-  
-- @peaceful: Urge for peaceful demonstration.
-- @radical: Let Barcelona see the united CNT and FAI!
+One of the most provocative points on the agenda list of the Congress is proposed by the National Committee and it concerns the position of the CNT about the Constituent Cortes and the policies discussed by its participants. Before the proposal a review of the recent acts of collaboration done by the Committee sparked outrage in among some of the 400 delegates at the Congress, though here and there (and mostly in Catalonia) there have been instances of incidental support in the anti-dictatorial forces. 
+The National Committee supports the need of discussion on this topic since the Republican Cortes was the result of many revloutionary acts in which the CNT played a big part. On the other, hand the anarchists pointed out the contradiction of these official actions with the anti-authoritarian principles laid out at the union's founding congress and stand vehemently against any support for the State, republic or monarchy.
+
+Many delegates don't seem to notice the contradiction in these these two positions or stand on the fence. Joan Peiro defended in his speech the need for gradual methods, essentially postponing the revolution and supporting a limited form of support for the more radical propositions and their advocates in the Vonstituent Cortes, even though he finished with a statement of hostility towards any state.
+What is the will of the unions?
+
+- @pro: Let us petition the Cortes
+- @anti: Dont's treat with the Cortes
 
 
 @peaceful:
-subtitle: We are not ready to threaten the Republic yet. 
-on-arrival: reformist_strength += 5; radicalization -= 1;
-go-to: aftermath
+subtitle: Let us petition the Cortes with our demands. 
+on-arrival: reform_points += 1; reformist_strength += 10; radicalization -= 1; thirty -= 1; ar_relation += 5; psoe_relation += 5; esq_relation += 5;
+go-to: point_two
 
-We urge our members not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
+We shall issue a manifesto with our proposal to influence the radical parties in the Cortes. Let the voice of the workers be heard, we can play at revolution late!
 
-@radical
+@anti
 subtitle: Let the demonstration proceed naturally.
-on-arrival: revolutionary_strength += 5; radicalization -= 1; reformist_dissent += 5; fai_ties += 1
-go-to: aftermath
+on-arrival: revolut_points += 1; revolutionary_strength += 10; radicalization += 1; thirty += 1; ar_relation -= 5; psoe_relation -= 5; esq_relation -= 5; ep_relation -= 5; lc_relation -= 10
+go-to: point_two
 
-Let the people do as they will. If things turn ugly, we'll stand together with our comrades of the FAI.
+Any official petition to the State and its institutions recognizes their power over us. As anarchists we cannot do that as we surrender not only our rights but also our dignity.
 
-@aftermath
-on-arrival: militarization += 0.1
+@point two
+
+The next point in the agenda that stirred the delegates concerns another proposal by the National Committee. This time it is about an idea for restructuring of the structure of the Confederation. 
+The current structure 
+
+
+
 
 During the demonstration, the Civil Guards shot on workers from the FAI trying to deliver their demands at the Generalitat Palace, killing one protester and wounding fifteen more. Armed anarchists returned fire and two Guards were shot dead. 
 The incident has shown that even under the Republican control the Civil Guard are still hostile to our union. The realisation has radicalised some of our members.
