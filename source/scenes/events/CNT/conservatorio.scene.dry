@@ -4,7 +4,6 @@ view-if: year = 1931 and month = 6 and forthnight = 1
 priority: -2
 max-visits: 1
 tags: event
-on-arrival: if revolutionary_strength >= 34, revolut_points += 3; if revolutionary_strength >= 29, revolut_points += 2; if revolutionary_strength >= 24, revolut_points += 1; if reformist_strength >= 39, reform_points += 3; if reformist_strength >= 34, reform_points += 2; if reformist_strength >= 29, reform_points += 1
 new-page: true
 
 = The Coservatorio Congress
