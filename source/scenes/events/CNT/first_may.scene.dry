@@ -15,14 +15,14 @@ Under the shadow of those radical demands and with a renewed revolutionary spiri
 
 @peaceful:
 subtitle: We are not ready to threaten the Republic yet. 
-on-arrival: reformist_strength += 5; radicalization -= 1;
+on-arrival: reform_points += 1; radicalization -= 1; esq_relation += 5
 go-to: aftermath
 
 We urge our members not to give in to provocations, whatever the anarchists want to do, it's their responsibility, not ours.
 
 @radical
 subtitle: Let the demonstration proceed naturally.
-on-arrival: revolutionary_strength += 5; radicalization += 1; reformist_dissent += 5; fai_ties += 1
+on-arrival: revolut_points += 1; radicalization += 1; reformist_dissent += 5; fai_ties += 1
 go-to: aftermath
 
 Let the people do as they will. If things turn ugly, we'll stand together with our comrades of the FAI.
