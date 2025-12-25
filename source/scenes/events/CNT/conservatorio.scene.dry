@@ -8,42 +8,48 @@ new-page: true
 
 = The Coservatorio Congress
 
-On  June  11th the delegates of the CNT convened to resolve the big issues dividing the union. The congress is split in two sides, with some exceptions, following the split along the lines of reformist unionists and anarchists.
-On one hand, there are the delegates around Angel Pestana (reformists) and Joan Peiro (unionists), who are, more or less, supportive of the Republic, for fear of the rightist reaction, and more friendly to the leftist parties in the upcoming Constituent Cortes. The leading faces among these delegates are, like Sr. Peiro, members of the National Committee. Sr. Pestana himself is the Chairman of the Committee. The editorial committee of the union's main newspaper in Barcelon, Solidaridad Obrera, is also full of their sympathisers
-On the other hand are the militant FAIstas and especially the people around the Nosotros group, as well of the more dogmatic anarchist intellectuals, like Diego Abad de Santillan. Being inspired by the struggles of their exile revolutionaries, these delegates are more radical in their demands and their actions. They oppose any tollerance of the state and support revolutionary actions. They are still a loud minority, but are fastly gaining popularity among the union members with in their rhetoric.
+On  June  11th the delegates of the CNT convened extraordinarily to resolve the big issues dividing the union. The congress is split in two sides, with some exceptions, following the split along the lines of reformist unionists and anarchists.
+On one hand, there are the delegates around Angel Pestana (reformists) and Joan Peiro (unionists), who are, more or less, friendly of the Republic, for fear of the rightist reaction. The leading faces among these delegates are, like Sr. Peiro, members of the National Committee and the anarcho-syndicalist Solidaridad group. Sr. Pestana himself is the Chairman of the Committee. The editorial committee of the union's main newspaper in Barcelona, Solidaridad Obrera, is also full of their sympathisers
+On the other hand are the militant FAIstas and especially the people around the Nosotros group, as well of the anarchist intellectuals, like Diego Abad de Santillan (on some issues). Being inspired by the struggles of their exile revolutionaries, these delegates are more radical in their demands and their actions. They oppose any tollerance of the state and support revolutionary actions. They are still a loud minority, but are fastly gaining popularity among the union members with in their rhetoric.
 
-One of the most provocative points on the agenda list of the Congress is proposed by the National Committee and it concerns the position of the CNT about the Constituent Cortes and the policies discussed by its participants. Before the proposal a review of some recent acts of collaboration done by the Committee sparked outrage in among some of the 511 delegates at the Congress, though indeed it is known that there have been instances of support between the anti-dictatorial forces during the Primo de River regime. 
-The National Committee supports the need of discussion on this topic since the Republican Cortes was the result of many revloutionary acts in which the CNT played a big part. On the other hand, the anarchists pointed out the contradiction of these official actions with the anti-authoritarian principles laid out at the union's founding congress and stand vehemently against any support or recognition for the State authority, republican or monarchist.
+One of the most provocative points on the agenda list of the Congress is proposed by the National Committee and it concerns the position of the CNT about the Constituent Cortes and the policies discussed by its participants. Before the proposal a review of some recent acts of collaboration done by the Committee sparked outrage among some of the 511 delegates at the Congress, though indeed it is known (especially in Catalonia) that there have been instances of support between the anti-dictatorial forces during the Primo de River regime. 
+The National Committee supports the need of discussion on this topic since the Republican Cortes was the result of many "revloutionary acts" in which the CNT played a big part. On the other hand, the anarchists pointed out the contradiction of having such deliberations with the anti-authoritarian principles laid out at the union's founding congress and our stance against any support or recognition for the State authority, republican or monarchist.
 
-Many delegates don't seem to notice the contradiction in these these two positions or stand on the fence. Joan Peiro defended in his speech the need for gradual methods, essentially postponing the revolution and supporting a limited form of support for the more radical propositions and their advocates in the Constituent Cortes, even though he finished with a statement of hostility towards any state.
+Many delegates don't seem to notice the contradiction in these these two positions or stand on the fence. Joan Peiro defended in his speech the need for gradual methods, essentially postponing the revolution and supporting a limited form of support for the more radical propositions and their advocates in the Constituent Cortes, even though he finished his speech with an assurance of his anti-parliamentarism.
 What is the will of the unions?
 
-- @pro: Let us petition the Cortes
-- @anti: Dont's treat with the Cortes
+- @pro: Let us discuss the Cortes
+- @anti: Don't treat with the Cortes
 
 
-@peaceful:
-subtitle: Let us petition the Cortes with our demands. 
+@pro
+subtitle: Let us discuss the Cortes and our demands. 
 on-arrival: reform_points += 1; reformist_strength += 10; radicalization -= 1; thirty -= 1; ar_relation += 5; psoe_relation += 5; esq_relation += 5;
 go-to: point_two
 
-We shall issue a manifesto with our proposal to influence the radical parties in the Cortes. Let the voice of the workers be heard, we can play at revolution late!
+The delegates have barely approved a proposal to influence the radical parties in the Cortes. Let the voice of the workers be heard, we can play at revolution later!
+We wil draft this manifesto as soon as possible and on the insistance of the anarchists, it will have to epress our most radical vision of a free society!
 
 @anti
-subtitle: Let the demonstration proceed naturally.
+subtitle: We are not parlamentarians
 on-arrival: revolut_points += 1; revolutionary_strength += 10; radicalization += 1; thirty += 1; ar_relation -= 5; psoe_relation -= 5; esq_relation -= 5; ep_relation -= 5; lc_relation -= 10
 go-to: point_two
 
-Any official petition to the State and its institutions recognizes their power over us. As anarchists we cannot do that as we surrender not only our rights but also our dignity.
+Any official position adressed towards the State and its institutions recognizes their power over us. As anarchists we cannot do that as we surrender not only our rights but also our dignity.
+The workers gave decided that we shall stress our commitment to anti-parliamentarism and our hostility towards any state auhority in a manifesto. For it to be approved, it would have to be quite ambiguous, but at least we are not licking the politicians' boots.
 
 @point two
 
-The next point in the agenda that stirred the delegates concerns another proposal by the National Committee. This time it is about an idea for restructuring of the structure of the Confederation. 
-The current structure 
+The next point in the agenda that stirred the delegates concerns another proposal by the National Committee. This time it is about an idea for a restructuring  ofthe Confederation. 
+The current structure has been, ever since the CNT's creration, oriented towards the local organisations where all workers and professional unions are united. A union in Barcelona sends delegate to the Catalonian union plenum where, after deliberations, delegates are sent to the Natioanl Congress.
+The new proposal of concurent National Industrial Federations suggests that we organize a concrent union structure around professional lines where, for example, all coal miners' unions in Oviedo will convene together and then send their delegates to the regional plenum of their professional unions and so on.
 
+Supporters of this motion say that the current structure was the product of its time as Spain was less industrialized at the time of the CNT's inception. Now however we must adapt ourselves and adopt this new idea as it will make strike and direct action coordination way easier - rather than regional coordination, it would require workers of the industry only to organize and will ease the communication with the National Committee as it's not required for a motion to pass through the local committees.
+Its opponents warn of its clearly centralist tendencies, as this way the autonomous central unit of the CNT - the Sindicato Unico (the One Union) - shall lose its power and significance and lead to more centralized control and even more bureaucracy. They speak the we are not Marxists and need not enslave oursleves to economical factors. We need free communes, not the perfect tool to create a free world.
 
+The tension is hot and in the deliberations many insults are hurled - it seems that unity in the CNT may not be possible.
+Many comrades are still on the fence, though it seems that the proposition for National Indutrial Federations was well accepted by the delegates. What ultimately is the Congress'decision?
 
+-@
 
-During the demonstration, the Civil Guards shot on workers from the FAI trying to deliver their demands at the Generalitat Palace, killing one protester and wounding fifteen more. Armed anarchists returned fire and two Guards were shot dead. 
-The incident has shown that even under the Republican control the Civil Guard are still hostile to our union. The realisation has radicalised some of our members.
 
