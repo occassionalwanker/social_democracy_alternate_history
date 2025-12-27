@@ -1,0 +1,29 @@
+title: The Coming Change
+view-if: year == 1930 and month == 3 and forthnight == 2
+new-page: true
+on-arrival: strike += 1
+tags: event
+
+= The Coming Change
+
+Next month are the local elections in all of Spain. These are not only the first elections in the country since the beginning of the dictatorship, but also a chance for the Republican parties to show their popularity. This may be the final showdown between the republican and monarchist parties.
+
+Since these are such important elections and show an obvious crack in the feudal order, it would be a shame not to seize the moment and call for a general strike. 
+
+The more unionist oriented of our comrades have called for the strike to be dedicated to the republican cause and in protest with the monarchy as it is the system that unites the worst elements of capitalism, clreicalism and statism.
+Others however have suggested we demand the release of our comrades in jail, unjustly imprisoned for their fight for freedom.
+
+- @republic: The strike will be in support of a Republic!
+- @jail: We strike to free our comrades!
+
+@republic
+on-arrival: reform_points += 1; esq_relation += 5; psoe_relation += 5;
+
+We strike to protest the unjust monrachist regime and its failures. That will give us a commont grounf with some republican parties, especially those in our heartland - Catalonia.
+
+
+@jail
+on-arrival: revolut_points += 1; cnt_militancy += 0.1
+
+We strike to secure our comrades's release from unjust imprisonment. Some of our militants are ready to charge the cells themselves and break every political prisoner free.
+
