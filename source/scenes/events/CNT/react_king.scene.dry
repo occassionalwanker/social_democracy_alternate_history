@@ -1,21 +1,21 @@
 title: Aftermath of the Birth of Republic
 subtitle: How shall we react to the unfolding events?
 view-if: year = 1931 and month = 4 and fortnight = 2
-on-arrival: president_catalonia == "Macia"
+on-arrival: president_catalonia == "Macia"; strike -= 1
 new-page: true
 max-visits: 1
 face-image: img/portraits/SchleicherKurt.jpg
 tags: event
 
   The Catalan Republican Left has decided to fold after lengthy negotiations with the other Republican parties and promises of autonomy, also extended to the Basque and Galician minorities and their parties.
-  The proclamation of the Second Spanish Republic is big news for us and all of Spain. We have played our part in the Dictatorship's fall and on occasions we have had our moments of shared struggle and persecution with the Republican parties. For that reason, several representatives and voices in the editor's committee of Solidaridad Obrera, led by Joan Peiro, have proposed we express our enthusiasm of the Republican triumph and our hopes for fruitfull partnership with our Republican allies. Many representatives in the National Committee from the reformist and unionist wings support Peiro's proposal since we too have played our part in the fall of the dictatorship and the monarchy.
+  The proclamation of the Second Spanish Republic is big news for us and all of Spain. We have played our part in the Dictatorship's fall and on occasions we have had our moments of shared struggle and persecution with the Republican parties as well as the vote of most of our members for Republican parties. For that reason, several representatives and voices in the editor's committee of Solidaridad Obrera, led by Joan Peiro, have proposed we express our enthusiasm of the Republican triumph and our hopes for fruitfull partnership with our Republican allies. Many representatives in the National Committee from the reformist and unionist wings support Peiro's proposal since we too have played our part in the fall of the dictatorship and the monarchy.
   
   On the other hand, the anarchist firebrands who were recently freed after the amnesty and some of whom have returned from exile, will not hesitate to oppose the Republic and denounce it as a bourgoise oppressor. Their fiery rhetoric will surely sway the more radical members of the union and maybe Sr. Peiro's proposal wouldn't, strictly speaking, represent the vast majority of the workers in the union.
 
   What course of action does the editorial committee take? Do they share in the popular celebrations? Or are they swayed to denounce the newborn state as a defender of capitalist exploters and yet another vessel of reaction?
   
-- @enjoy
-- @denounce
+- @enjoy: We will share the people's enthusiasm.
+- @denounce: We celebrate, but still warn of these false liberators.
 
 @enjoy
 title: Viva la Republica!
@@ -26,7 +26,7 @@ Celebrating the Republic's birth will not only increase our popularity among som
   
 @denounce
 title: Viva la Anarquia!
-subtitle: We will share denounce these false liberators.
+subtitle: We celebrate, but still warn of these false liberators.
 on-arrival: revolut_points += 1; reformist_dissent += 5; psoe_relation += 5; cnt_attraction -= 2; anarchism -= 2;
   
 The Second Spanish Republic is yet another false idol that will ultimately fail to save mankind from exploitation and oppression. We should keep cool while the people are celebrating and while we express our own enthusiasm at the King's flight, we can also forewarn that the Republic's reign doesn't mean the beginning of social harmony, as even some members of the CNT naively believe. 
